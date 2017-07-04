@@ -1,0 +1,236 @@
+/*********************************************/
+/*@IMPORTS*/
+/*********************************************/
+@import "vendors/global";
+@import "helpers/global";
+@import "components/global";
+@import "helpers/mixins";
+@import "components/sprite";
+/*********************************************/
+/*FONTS*/
+/*********************************************/
+
+@include font-face("ArciformSanscyr", "../fonts/ArciformSanscyr-lat-Regular/ArciformSanscyr", 400, normal, eot ttf woff woff2);
+@include font-face("LCChalk", "../fonts/LCChalk/LCChalk", 400, normal, eot ttf woff woff2);
+@include font-face("CenturyGothic", "../fonts/CenturyGothic/CenturyGothic", 400, normal, eot ttf woff woff2);
+@include font-face("ArialRoundedBold", "../fonts/ArialRoundedMTBold/ArialRoundedMTBold", 700, bold, eot ttf woff woff2);
+
+/*********************************************/
+/*MAIN STYLES*/
+/*********************************************/
+
+body {
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: #000;
+  min-width: 320px;
+  position: relative;
+}
+
+.mainWrapper {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  padding: 0;
+  margin: 0 !important;
+}
+
+.wrapperBlock {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*********************************************/
+/*TYPOGRAPHY*/
+/*********************************************/
+
+/*********************************************/
+/*STICKY FOOTER*/
+/*********************************************/
+
+/*********************************************/
+/*HEADER*/
+/*********************************************/
+
+@import "sections/header";
+
+/*********************************************/
+/*SECTIONS*/
+/*********************************************/
+
+.mainWrapper {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  padding: 0;
+  margin: 0 !important;
+  overflow: hidden;
+}
+
+.bl_main {
+  clear: both;
+  background: $color_orange url("../img/setkaMin.png") 50% 50% repeat;
+  width: 100%;
+  padding-top: 4px;
+  border-top: 1px double #000;
+  border-bottom: 2px solid #000;
+}
+
+.bl_orange {
+  background-color: $color_orange;
+}
+
+.bl_video {
+
+  position: relative;
+  width: 100%;
+  min-height: $minHeghtMainPage;
+  background-color: rgba(0, 0, 0, 0.25);
+
+  &__play-triangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include sprite($play-triangle);
+  }
+
+  &__link {
+    position: absolute;
+    display: block;
+    bottom: 19px;
+    right: 16px;
+    @include sprite($hesh);
+  }
+
+}
+
+// SLIDERS
+
+.bl_fullSliders {
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+  min-height:$minHeghtMainPage;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: $color_orange;
+  .owl-nav{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .owl-carousel .owl-nav .owl-next{
+    float: right;
+    font-size: 0;
+    width: 75px;
+    margin-top: 20px;
+    margin-right: 30px;
+    background: transparent url("../img/arrow_right.svg")50% 50% no-repeat;
+  }
+  .owl-carousel .owl-nav .owl-prev{
+    float: left;
+    font-size: 0;
+    width: 75px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background: transparent url("../img/arrow_left.svg") 50% 50% no-repeat;
+  }
+}
+
+.slider_hits {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.slider_item {
+  &__title {
+    width: 172px;
+    display: block;
+    text-align: center;
+    margin: 6px auto 0;
+    font-family: $ArialRoundedBold;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 17px;
+  }
+
+  &__img{
+    margin-top: 38px;
+    height: 363px;
+  }
+
+  &__details {
+
+    color: $color_lightWhite;
+    font-family: $ArialRoundedBold;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  &__sale{
+    position: absolute;
+    top: 16%;
+    display: block;
+    transform: rotate(-45deg);
+    font-family: $LCChalk;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 104px;
+  }
+
+}
+
+/*********************************************/
+/*FOOTER*/
+/*********************************************/
+
+@import "sections/footer";
+
+/*********************************************/
+/*@IMPORT MEDIA*/
+/*********************************************/
+
+@import "helpers/media";

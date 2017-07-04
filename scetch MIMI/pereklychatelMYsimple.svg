@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:i="&amp;#38;#38;ns_ai;"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xml:space="preserve"
+   style="enable-background:new 0 0 595.3 841.9;"
+   viewBox="0 0 595.3 841.9"
+   y="0px"
+   x="0px"
+   id="Слой_1"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="pereklychatelMYsimple.svg"><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="988"
+     id="namedview18"
+     showgrid="false"
+     inkscape:zoom="4.4850931"
+     inkscape:cx="41.466507"
+     inkscape:cy="770.26621"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Слой_1" /><metadata
+     id="metadata29"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+     id="defs27" /><style
+     id="style3"
+     type="text/css">
+	.st0{fill:#201600;}
+	.st1{fill:#ED7D31;}
+	.st2{fill:none;stroke:#201600;stroke-width:3;stroke-miterlimit:10;}
+	.st3{fill:none;}
+	.st4{font-family:'ArciformSanscyr-lat-Regular';}
+	.st5{font-size:36px;}
+	.st6{fill:#FAD9C2;}
+	.st7{fill:none;stroke:#FAD9C2;stroke-width:3;stroke-miterlimit:10;}
+</style><switch
+     id="switch5"><foreignObject
+       height="1"
+       width="1"
+       y="0"
+       x="0"
+       requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"><i:pgfRef
+         xlink:href="#adobe_illustrator_pgf" /></foreignObject><g
+       id="g7"
+       i:extraneous="self"><g
+         transform="matrix(0.4615373,0,0,0.4615373,-70.294661,-182.88295)"
+         id="g3443"><path
+           style="fill:#201600"
+           id="XMLID_1_"
+           class="st0"
+           d="m 298.3,506.2 -82.7,0 c -21.4,0 -38.8,-17.5 -38.8,-38.8 l 0,0 c 0,-21.4 17.5,-38.8 38.8,-38.8 l 82.7,0 c 21.4,0 38.8,17.5 38.8,38.8 l 0,0 c 0.1,21.3 -17.4,38.8 -38.8,38.8 z" /><circle
+           style="fill:#ed7d31"
+           id="XMLID_2_"
+           class="st1"
+           cx="216.7"
+           cy="467.39999"
+           r="33.900002" /><path
+           style="fill:none;stroke:#201600;stroke-width:3;stroke-miterlimit:10"
+           id="XMLID_3_"
+           class="st2"
+           d="m 169.6,467.4 c 0,-25.8 20.9,-46.7 46.7,-46.7" /><rect
+           style="fill:none"
+           id="XMLID_4_"
+           x="249.60001"
+           y="437.70001"
+           class="st3"
+           width="86.599998"
+           height="59.299999" /><text
+           id="XMLID_5_"
+           transform="translate(270.93,464.7357)"><tspan
+             style="font-size:36px;font-family:ArciformSanscyr-lat-Regular;fill:#ed7d31"
+             x="0"
+             y="0"
+             class="st1 st4 st5"
+             id="tspan14">ме</tspan><tspan
+             style="font-size:36px;font-family:ArciformSanscyr-lat-Regular;fill:#ed7d31"
+             x="-0.30000001"
+             y="23"
+             class="st1 st4 st5"
+             id="tspan16">ню</tspan></text>
+<path
+           style="fill:none;stroke:#201600;stroke-width:3;stroke-miterlimit:10"
+           id="XMLID_6_"
+           class="st2"
+           d="m 180,527 c 42.5,42.5 111.4,42.5 153.9,0" /><path
+           style="fill:#201600"
+           id="XMLID_7_"
+           class="st0"
+           d="m 313.9,561.1 -4.9,2.5 c -4.2,2.1 -9.3,0.4 -11.4,-3.8 l -3.6,-7.3 20.2,-10 3.6,7.3 c 2,4 0.2,9.2 -3.9,11.3 z" /></g></g></switch><path
+     style="fill:none;stroke:#fad9c2;stroke-width:1.37485313;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="XMLID_11_"
+     class="st7"
+     d="m 67,10.498144 c 11.823736,0 21.401876,9.578143 21.401876,21.40188" /></svg>

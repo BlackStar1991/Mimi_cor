@@ -1,0 +1,188 @@
+
+.bl_header {
+  background-color: $color_orange;
+  width: 100%;
+  min-height: 130px;
+
+  border-bottom: 2px solid #000;
+
+
+  &__full {
+    margin-top: 2%;
+    padding-bottom: 2%; //////40px
+  }
+
+}
+
+.bl_eye {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+
+  margin-left: 10%; //// 138px
+
+  width: 75px;
+  height: 75px;
+
+  border: 1px solid green;
+  box-sizing: border-box;
+
+  &-checkbox {
+    position: absolute;
+    top: 60%;
+    left: 10px;
+    opacity: 0;
+
+
+  }
+
+
+  &__eyebrow {
+    position: absolute;
+    top: 0;
+    left: -13px;
+    @include sprite($eyebrow);
+    z-index: 11;
+  }
+
+  &-label {
+    position: absolute;
+    bottom: 0;
+    width: 70px;
+    height: 37px;
+    background-color: #020202;
+    border-radius: 30px;
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  &-switch {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: $color_lightWhite;
+    transition: ease .3s;
+    z-index: 10;
+  }
+  .bl_eye-checkbox:checked + .bl_eye-label .bl_eye-switch{
+    transition: ease .3s;
+    top: 3px;
+    left: 36px;
+  }
+
+
+
+  &_mouth{
+    position: absolute;
+    left: 0;
+    bottom: -15%;
+    @include sprite($mouth);
+    z-index:13;
+  }
+
+  &_tougle{
+    position: absolute;
+    left: 0;
+    bottom: -15%;
+    @include sprite($tongue);
+    z-index:14;
+  }
+
+}
+
+.bl_nav{
+  position: relative;
+  float: right;
+  width: 305px;
+  height: 100%;
+  display: inline-block;
+
+
+  //overflow: hidden;
+
+  &__adress{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__tel{
+    text-align: right;
+    font-family: $ArialRoundedBold;
+    line-height: 25px;
+    &_code{
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    &_main{
+      font-size: 51px;
+      font-weight: 700;
+    }
+
+  }
+
+  &__street{
+    margin-top: 10px;
+    text-align: right;
+    font-family: $CenturyGothic;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  // SOCBUTTONS
+
+  &__socButtons{
+    clear: both;
+    float: right;
+
+  }
+  &__email{
+    float: right;
+    vertical-align: top;
+    margin-left: 10px;
+    @include sprite($email);
+  }
+  &__facebook{
+    float: right;
+    vertical-align: top;
+    margin-left: 10px;
+    @include sprite($facebook);
+  }
+
+  &__instagram{
+    float: right;
+    vertical-align: top;
+    @include sprite($instagram);
+  }
+}
+
+.bl_menu{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0%; ///80%
+
+  &__fullMenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    float: right;
+    width: 100%;
+    color: $color_lightWhite;
+    font-family: $ArialRoundedBold;
+    font-size: 20px;
+    line-height: 10px;
+  }
+
+  &__item{
+
+  }
+
+}
+
+

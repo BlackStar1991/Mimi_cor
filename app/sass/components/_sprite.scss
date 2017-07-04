@@ -1,0 +1,211 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$chair-icon-name: 'chair-icon';
+$chair-icon-x: 151px;
+$chair-icon-y: 90px;
+$chair-icon-offset-x: -151px;
+$chair-icon-offset-y: -90px;
+$chair-icon-width: 31px;
+$chair-icon-height: 44px;
+$chair-icon-total-width: 234px;
+$chair-icon-total-height: 153px;
+$chair-icon-image: '../img/sprite.png';
+$chair-icon: (151px, 90px, -151px, -90px, 31px, 44px, 234px, 153px, '../img/sprite.png', 'chair-icon', );
+$email-name: 'email';
+$email-x: 198px;
+$email-y: 0px;
+$email-offset-x: -198px;
+$email-offset-y: 0px;
+$email-width: 36px;
+$email-height: 38px;
+$email-total-width: 234px;
+$email-total-height: 153px;
+$email-image: '../img/sprite.png';
+$email: (198px, 0px, -198px, 0px, 36px, 38px, 234px, 153px, '../img/sprite.png', 'email', );
+$eyebrow-name: 'eyebrow';
+$eyebrow-x: 198px;
+$eyebrow-y: 83px;
+$eyebrow-offset-x: -198px;
+$eyebrow-offset-y: -83px;
+$eyebrow-width: 24px;
+$eyebrow-height: 25px;
+$eyebrow-total-width: 234px;
+$eyebrow-total-height: 153px;
+$eyebrow-image: '../img/sprite.png';
+$eyebrow: (198px, 83px, -198px, -83px, 24px, 25px, 234px, 153px, '../img/sprite.png', 'eyebrow', );
+$facebook-name: 'facebook';
+$facebook-x: 151px;
+$facebook-y: 47px;
+$facebook-offset-x: -151px;
+$facebook-offset-y: -47px;
+$facebook-width: 38px;
+$facebook-height: 38px;
+$facebook-total-width: 234px;
+$facebook-total-height: 153px;
+$facebook-image: '../img/sprite.png';
+$facebook: (151px, 47px, -151px, -47px, 38px, 38px, 234px, 153px, '../img/sprite.png', 'facebook', );
+$hesh-name: 'hesh';
+$hesh-x: 77px;
+$hesh-y: 96px;
+$hesh-offset-x: -77px;
+$hesh-offset-y: -96px;
+$hesh-width: 51px;
+$hesh-height: 44px;
+$hesh-total-width: 234px;
+$hesh-total-height: 153px;
+$hesh-image: '../img/sprite.png';
+$hesh: (77px, 96px, -77px, -96px, 51px, 44px, 234px, 153px, '../img/sprite.png', 'hesh', );
+$instagram-name: 'instagram';
+$instagram-x: 198px;
+$instagram-y: 43px;
+$instagram-offset-x: -198px;
+$instagram-offset-y: -43px;
+$instagram-width: 35px;
+$instagram-height: 35px;
+$instagram-total-width: 234px;
+$instagram-total-height: 153px;
+$instagram-image: '../img/sprite.png';
+$instagram: (198px, 43px, -198px, -43px, 35px, 35px, 234px, 153px, '../img/sprite.png', 'instagram', );
+$map-icon-name: 'map-icon';
+$map-icon-x: 77px;
+$map-icon-y: 47px;
+$map-icon-offset-x: -77px;
+$map-icon-offset-y: -47px;
+$map-icon-width: 53px;
+$map-icon-height: 44px;
+$map-icon-total-width: 234px;
+$map-icon-total-height: 153px;
+$map-icon-image: '../img/sprite.png';
+$map-icon: (77px, 47px, -77px, -47px, 53px, 44px, 234px, 153px, '../img/sprite.png', 'map-icon', );
+$mi-icon-name: 'mi-icon';
+$mi-icon-x: 77px;
+$mi-icon-y: 0px;
+$mi-icon-offset-x: -77px;
+$mi-icon-offset-y: 0px;
+$mi-icon-width: 69px;
+$mi-icon-height: 42px;
+$mi-icon-total-width: 234px;
+$mi-icon-total-height: 153px;
+$mi-icon-image: '../img/sprite.png';
+$mi-icon: (77px, 0px, -77px, 0px, 69px, 42px, 234px, 153px, '../img/sprite.png', 'mi-icon', );
+$mouth-name: 'mouth';
+$mouth-x: 0px;
+$mouth-y: 0px;
+$mouth-offset-x: 0px;
+$mouth-offset-y: 0px;
+$mouth-width: 72px;
+$mouth-height: 68px;
+$mouth-total-width: 234px;
+$mouth-total-height: 153px;
+$mouth-image: '../img/sprite.png';
+$mouth: (0px, 0px, 0px, 0px, 72px, 68px, 234px, 153px, '../img/sprite.png', 'mouth', );
+$news-icon-name: 'news-icon';
+$news-icon-x: 151px;
+$news-icon-y: 0px;
+$news-icon-offset-x: -151px;
+$news-icon-offset-y: 0px;
+$news-icon-width: 42px;
+$news-icon-height: 42px;
+$news-icon-total-width: 234px;
+$news-icon-total-height: 153px;
+$news-icon-image: '../img/sprite.png';
+$news-icon: (151px, 0px, -151px, 0px, 42px, 42px, 234px, 153px, '../img/sprite.png', 'news-icon', );
+$play-triangle-name: 'play-triangle';
+$play-triangle-x: 0px;
+$play-triangle-y: 73px;
+$play-triangle-offset-x: 0px;
+$play-triangle-offset-y: -73px;
+$play-triangle-width: 60px;
+$play-triangle-height: 80px;
+$play-triangle-total-width: 234px;
+$play-triangle-total-height: 153px;
+$play-triangle-image: '../img/sprite.png';
+$play-triangle: (0px, 73px, 0px, -73px, 60px, 80px, 234px, 153px, '../img/sprite.png', 'play-triangle', );
+$tongue-name: 'tongue';
+$tongue-x: 198px;
+$tongue-y: 113px;
+$tongue-offset-x: -198px;
+$tongue-offset-y: -113px;
+$tongue-width: 15px;
+$tongue-height: 14px;
+$tongue-total-width: 234px;
+$tongue-total-height: 153px;
+$tongue-image: '../img/sprite.png';
+$tongue: (198px, 113px, -198px, -113px, 15px, 14px, 234px, 153px, '../img/sprite.png', 'tongue', );
+$spritesheet-width: 234px;
+$spritesheet-height: 153px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($chair-icon, $email, $eyebrow, $facebook, $hesh, $instagram, $map-icon, $mi-icon, $mouth, $news-icon, $play-triangle, $tongue, );
+$spritesheet: (234px, 153px, '../img/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
