@@ -2,6 +2,27 @@ $(document).ready(function () {
 
     console.log("work");
 
+
+    var menuSwich = $(".bl_eye-checkbox"),
+        blockAdress = $(".bl_nav__adress"),
+        blockNavigation = $(".bl_menu"),
+        blockAdress_animationClass = "bl_nav__adress__animate",
+        blockNavigation_aniamtionClass ="bl_menu__animate";
+
+
+    menuSwich.on("click", function(){
+
+        toggleClassAnimation(blockAdress, blockAdress_animationClass);
+        toggleClassAnimation(blockNavigation, blockNavigation_aniamtionClass);
+
+    });
+
+    function toggleClassAnimation(block, whatClass){
+        block.toggleClass(whatClass);
+    }
+
+
+
     var sliderHits = $(".slider_hits"),
         sliderShares = $(".slider_shares"),
         sliderNews = $(".slider_news");
@@ -21,6 +42,8 @@ $(document).ready(function () {
         });
     }
     owlSlider(sliderHits);
+
+
 
 
 

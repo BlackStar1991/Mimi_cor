@@ -12,6 +12,10 @@
     padding-bottom: 2%; //////40px
   }
 
+  &__logo{
+
+  }
+
 }
 
 .bl_eye {
@@ -21,93 +25,150 @@
 
   margin-left: 10%; //// 138px
 
-  width: 75px;
-  height: 75px;
+  width: 95px;
+  height: 95px;
 
   border: 1px solid green;
   box-sizing: border-box;
+  z-index:999;
 
   &-checkbox {
     position: absolute;
-    top: 60%;
-    left: 10px;
-    opacity: 0;
-
-
+    top: 25%;
+    left: 45%;
+    //opacity: 0;
   }
 
-
-  &__eyebrow {
-    position: absolute;
-    top: 0;
-    left: -13px;
-    @include sprite($eyebrow);
-    z-index: 11;
+  #swich{
+    cursor: pointer;
+    z-index:999;
   }
+
 
   &-label {
     position: absolute;
-    bottom: 0;
-    width: 70px;
-    height: 37px;
-    background-color: #020202;
-    border-radius: 30px;
-    z-index: 100;
-    cursor: pointer;
-  }
-
-  &-switch {
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 31px;
-    height: 31px;
-    border-radius: 50%;
-    background-color: $color_lightWhite;
-    transition: ease .3s;
-    z-index: 10;
-  }
-  .bl_eye-checkbox:checked + .bl_eye-label .bl_eye-switch{
-    transition: ease .3s;
-    top: 3px;
-    left: 36px;
-  }
-
-
-
-  &_mouth{
-    position: absolute;
+    top: 0;
     left: 0;
-    bottom: -15%;
-    @include sprite($mouth);
-    z-index:13;
+    width: 100%;
+    height: 100%;
+  }
+  .swichRectangl{
+   fill: $color_switch;
+    transition: all ease .3s;
+  }
+  .eyeborowLeft{
+    opacity:1;
+    stroke-width: 3;
+    fill: none;
+    stroke-miterlimit: 10;
+    stroke:$color_switch;
+    transition: all ease .3s;
   }
 
-  &_tougle{
-    position: absolute;
-    left: 0;
-    bottom: -15%;
-    @include sprite($tongue);
-    z-index:14;
+  .eyeborowRight{
+    fill: none;
+    stroke-width: 1.6067;
+    stroke-miterlimit: 10;
+    stroke:$color_lightWhite;
+    transition: all ease .3s;
+    opacity:0;
   }
+
+  .tongue {
+    stroke: $color_switch;
+    transition: all ease .3s;
+  }
+
+  .st1 {
+    fill: $color_orange;
+  }
+
+  .bl_eye_circle{
+    fill: $color_orange;
+
+    transition: all ease .3s;
+  }
+
+
+
+  .mouth{
+    fill: none;
+    stroke: $color_switch;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+    transition: all ease .3s;
+  }
+
+  .swich_text {
+    font-size: 14px;
+    font-family: $ArialRoundedBold;
+    fill: $color_orange;
+  }
+
+
+  .bl_eye-checkbox:checked + .bl_eye-label .bl_eye_circle{
+    transform: translateX(120%);
+    transition: all ease .3s;
+  }
+  .bl_eye-checkbox:checked + .bl_eye-label .eyeborowRight{
+    opacity:1;
+    transition: all ease .3s;
+  }
+  .bl_eye-checkbox:checked + .bl_eye-label .eyeborowLeft{
+    opacity:0;
+    transition: all ease .3s;
+  }
+
+  .bl_eye-checkbox:checked + .bl_eye-label .swichRectangl{
+    fill: $color_lightWhite;
+    transition: all ease .3s;
+  }
+
+  .bl_eye-checkbox:checked + .bl_eye-label .mouth{
+    stroke: $color_lightWhite;
+    transition: all ease .3s;
+  }
+
+
+  .bl_eye-checkbox:checked + .bl_eye-label .tongue{
+    stroke: $color_lightWhite;
+    fill: $color_lightWhite;
+    transition: all ease .3s;
+  }
+
+  .bl_eye-checkbox:checked + .bl_eye-label .swich_text{
+    display: none;
+  }
+
 
 }
+$animationTime: 0.4s;
 
 .bl_nav{
   position: relative;
+  padding-top: 3%;
   float: right;
-  width: 305px;
-  height: 100%;
+  width: 320px;
+  min-height: 150px;
   display: inline-block;
+  box-sizing: border-box;
+
+  //border: 1px solid #0f0;
+  overflow: hidden;
 
 
-  //overflow: hidden;
 
   &__adress{
     position: absolute;
     width: 100%;
     top: 0;
     left: 0;
+    transition: left $animationTime;
+    &__animate{
+      left: -110%;
+      transition: left $animationTime;
+    }
+
   }
 
   &__tel{
@@ -165,14 +226,23 @@
   position: absolute;
   width: 100%;
   top: 0;
-  left: 0%; ///80%
+  left: 110%; ///110%
+
+  transition: left $animationTime;
+
+  &__animate{
+    left: 0;
+    transition: left $animationTime;
+  }
 
   &__fullMenu{
+    width: 100%;
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     float: right;
-    width: 100%;
+
     color: $color_lightWhite;
     font-family: $ArialRoundedBold;
     font-size: 20px;
@@ -181,26 +251,92 @@
 
   &__item{
 
+
+    &:hover .bl_menu__word{
+      opacity:1;
+    }
+    &:hover .bl_menu__icon{
+      opacity: 0;
+    }
   }
 
   &__link{
+    position: relative;
     color: $color_lightWhite;
     font-family: $Arciform;
     font-size: 20px;
     line-height: 9px;
+  }
+  &__word{
+    display: inline-block;
+    opacity:0;
 
     &_decor{
       position: relative;
-      padding-right: 15px;
+      padding-right: 30px;
+      &:before{
+        content: "";
+        position: absolute;
+        left: 82%;
+        top: -1000%;
+        width: 1px;
+        height:100px;
+        background-color: $color_lightWhite;
+      }
+
       &:after{
         content: "";
         position: absolute;
+        top: -4px;
+        right: 0;
         @include sprite($mi);
       }
     }
+
   }
 
+  &__icon{
+    //display: none;
+
+    position: absolute;
+
+    transform: translate(50%, -35%);
+    z-index: 5;
+
+    &_mi{
+      @include sprite($mi-icon);
+      left: -45%;
+    }
+    &_chair{
+      @include sprite($chair-icon);
+    }
+    &_news{
+      @include sprite($news-icon);
+      left: -20%;
+    }
+    &_map{
+      @include sprite($map-icon);
+    }
+
+  }
 
 }
 
 
+
+@keyframes  adressMoving{
+  0%{
+    left: 0;
+  }
+  100%{
+    left: -110%;
+  }
+}
+@keyframes  menuMoving{
+  0%{
+    left: 110%;
+  }
+  100%{
+    left: 0;
+  }
+}

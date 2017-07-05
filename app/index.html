@@ -48,23 +48,31 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="bl_header__full">
-                            <img src="img/logo.png" alt="logomimi">
+                            <img class="bl_header__logo" src="img/logo.png" alt="">
 
                             <div class="bl_eye">
-                                <div class="bl_eye__eyebrow"></div>
                                 <input class="bl_eye-checkbox" type="checkbox" name="onoffswitch" id="bl_eye-checkbox">
                                 <label class="bl_eye-label" for="bl_eye-checkbox">
-                                    <div class="wrapperBlock">
-                                        <div class="bl_eye-switch"></div>
-                                    </div>
+                                    <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                         id="swich" x="0px" y="0px" viewBox="0 0 95 95" style="enable-background:new 0 0 95 95;"
+   xml:space="preserve"><g transform="matrix(0.4615373,0,0,0.4615373,-70.294661,-182.88295)" >
+<path  class="swichRectangl" d="M296.7,496.9H214c-21.4,0-38.8-17.5-38.8-38.8l0,0c0-21.4,17.5-38.8,38.8-38.8h82.7   c21.4,0,38.8,17.5,38.8,38.8l0,0C335.6,479.4,318.1,496.9,296.7,496.9z" />
+<circle r="34" cy="458" cx="215" class="bl_eye_circle"/>
+<path class="eyeborowLeft" d="M168,458.1c0-25.8,20.9-46.7,46.7-46.7"  />
+<text class="swich_text" transform="matrix(2.1667 0 0 2.1667 269.3049 455.45)">ме</text>
+<text class="swich_text" transform="matrix(2.1667 0 0 2.1667 269.0055 478.4498)">ню</text>
+<path class="mouth" d="M178.4,517.7c42.5,42.5,111.4,42.5,153.9,0"  />
+<path class="tongue" d="M312.3,551.8l-4.9,2.5c-4.2,2.1-9.3,0.4-11.4-3.8l-3.6-7.3l20.2-10l3.6,7.3   C318.2,544.5,316.4,549.7,312.3,551.8L312.3,551.8z" /></g>
+<path  class="eyeborowRight" d="m 66.80813,7.0981188 c 11.82374,0 21.40188,9.5781442 21.40188,21.4018812"/>
+</g>
+</svg>
 
                                 </label>
-                                <div class="bl_eye_mouth"></div>
-                                <div class="bl_eye_tougle"></div>
+
                             </div>
-                            <div class="bl_nav">
+                            <div class="bl_nav bl_nav__animate_initialPosition">
                                 <div class="wrapperBlock">
-                                    <div class="bl_nav__adress hidden">
+                                    <div class="bl_nav__adress">
                                         <p class="bl_nav__tel">
                                             <span class="bl_nav__tel_code">044</span>
                                             <span class="bl_nav__tel_main">222 51 21</span>
@@ -80,12 +88,24 @@
 
                                     <nav class="bl_menu">
                                         <div class="blockWrapper">
-                                        <ul class="bl_menu__fullMenu">
-                                            <li class="bl_menu__item"><a class="bl_menu__link bl_menu__link_decor" href="#">чому</a></li>
-                                            <li class="bl_menu__item"><a class="bl_menu__link" href="#">каталог</a></li>
-                                            <li class="bl_menu__item"><a class="bl_menu__link" href="#">новини</a></li>
-                                            <li class="bl_menu__item"><a class="bl_menu__link" href="#">контакти</a></li>
-                                        </ul>
+                                            <ul class="bl_menu__fullMenu">
+                                                <li class="bl_menu__item"><a class="bl_menu__link" href="#">
+                                                    <div class="bl_menu__icon bl_menu__icon_mi"></div>
+                                                    <p class="bl_menu__word bl_menu__word_decor">чому</p>
+                                                </a></li>
+                                                <li class="bl_menu__item"><a class="bl_menu__link" href="#">
+                                                    <div class="bl_menu__icon bl_menu__icon_chair"></div>
+                                                    <p class="bl_menu__word">каталог</p>
+                                                </a></li>
+                                                <li class="bl_menu__item"><a class="bl_menu__link" href="#">
+                                                    <div class="bl_menu__icon bl_menu__icon_news"></div>
+                                                    <p class="bl_menu__word">новини</p>
+                                                </a></li>
+                                                <li class="bl_menu__item"><a class="bl_menu__link" href="#">
+                                                    <div class="bl_menu__icon bl_menu__icon_map"></div>
+                                                    <p class="bl_menu__word">контакти</p>
+                                                </a></li>
+                                            </ul>
                                         </div>
                                     </nav>
 
@@ -124,7 +144,8 @@
                             <ul class="slider_hits owl-carousel owl-theme">
                                 <li class="slider_hits__item">
                                     <h2 class="slider_item__title">Парта-трансформер «Mimi»</h2>
-                                    <p class="slider_item__sale">- <span class="slider_item__sale_number">30</span> %</p>
+                                    <p class="slider_item__sale">- <span class="slider_item__sale_number">30</span> %
+                                    </p>
                                     <img class="slider_item__img" src="img/goods/item1.png" alt="item1">
                                     <a class="slider_item__details" href="#">дізнатись більше...</a>
                                 </li>
@@ -136,7 +157,8 @@
                                 </li>
                                 <li class="slider_hits__item">
                                     <h2 class="slider_item__title">Name3</h2>
-                                    <p class="slider_item__sale">- <span class="slider_item__sale_number">99</span> %</p>
+                                    <p class="slider_item__sale">- <span class="slider_item__sale_number">99</span> %
+                                    </p>
                                     <img class="slider_item__img" src="http://dummyimage.com/360x363/c0c0c0" alt="">
                                     <a class="slider_item__details" href="#">дізнатись більше...</a>
                                 </li>
@@ -151,6 +173,15 @@
                                 <li class="slider_news__item"></li>
                                 <li class="slider_news__item"></li>
                             </ul>
+
+                            <!--CHOOSE SLIDER -->
+                            <ul class="bl_fullSliders__block">
+                                <li class="bl_fullSliders_item"></li>
+                                <li class="bl_fullSliders_item"></li>
+                                <li class="bl_fullSliders_item"></li>
+                            </ul>
+
+
                         </div>
                     </div>
                 </div>
@@ -161,7 +192,10 @@
 <!------------------------------------------ FOOTER ----------------------------------------------------------->
 <footer class="footer">
     <!-- Code -->
-    <div class="mainWrapper"></div>
+    <div class="mainWrapper">
+
+
+    </div>
 </footer>
 
 <!-- build:js js/libs.min.js -->
