@@ -183,6 +183,24 @@
 
   }
 
+  &__link{
+    color: $color_lightWhite;
+    font-family: $Arciform;
+    font-size: 20px;
+    line-height: 9px;
+
+    &_decor{
+      position: relative;
+      padding-right: 15px;
+      &:after{
+        content: "";
+        position: absolute;
+        @include sprite($mi);
+      }
+    }
+  }
+
+
 }
 
 

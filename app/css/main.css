@@ -966,7 +966,7 @@ button {
     left: 0;
     bottom: -15%;
     background-image: url(../img/sprite.png);
-    background-position: -198px -113px;
+    background-position: -151px -139px;
     width: 15px;
     height: 14px;
     z-index: 14; }
@@ -1046,6 +1046,21 @@ button {
     font-family: "ArialRoundedMTBold", sans-serif;
     font-size: 20px;
     line-height: 10px; }
+  .bl_menu__link {
+    color: #fad9c2;
+    font-family: "ArciformSanscyr", sans-serif;
+    font-size: 20px;
+    line-height: 9px; }
+    .bl_menu__link_decor {
+      position: relative;
+      padding-right: 15px; }
+      .bl_menu__link_decor:after {
+        content: "";
+        position: absolute;
+        background-image: url(../img/sprite.png);
+        background-position: -198px -113px;
+        width: 23px;
+        height: 23px; }
 
 /*********************************************/
 /*SECTIONS*/
