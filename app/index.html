@@ -48,7 +48,10 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="bl_header__full">
-                            <img class="bl_header__logo" src="img/logo.png" alt="">
+                            <a class="bl_header__logo_link" href="#">
+                                <img class="bl_header__logo" src="img/logo.png" alt="">
+                            </a>
+
 
                             <div class="bl_eye">
                                 <input class="bl_eye-checkbox" type="checkbox" name="onoffswitch" id="bl_eye-checkbox">
@@ -108,13 +111,8 @@
                                             </ul>
                                         </div>
                                     </nav>
-
                                 </div>
-
-
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -176,9 +174,9 @@
 
                             <!--CHOOSE SLIDER -->
                             <ul class="bl_fullSliders__block">
-                                <li class="bl_fullSliders_item"></li>
-                                <li class="bl_fullSliders_item"></li>
-                                <li class="bl_fullSliders_item"></li>
+                                <li class="bl_fullSliders_item bl_fullSliders_item__active">хіти</li>
+                                <li class="bl_fullSliders_item">акції</li>
+                                <li class="bl_fullSliders_item">новини</li>
                             </ul>
 
 
@@ -190,11 +188,72 @@
     </div>
 </main>
 <!------------------------------------------ FOOTER ----------------------------------------------------------->
-<footer class="footer">
+<footer class="footer bl_orange">
     <!-- Code -->
     <div class="mainWrapper">
-
-
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <div class="bl_contacts">
+                        <p class="bl_contacts__adress">04074, м. Київ, вул. Новозабарська, 2/6</p>
+                        <p class="bl_contacts__adress">
+                            <span class="bl_contacts__adress_tel">044 222 51 21</span>
+                            <span class="bl_contacts__adress_email">info@mimi.ua</span>
+                        </p>
+                        <div class="bl_subscribeForDiscounts">
+                            <input class="bl_subscribeForDiscounts__email" type="email" placeholder="email">
+                            <div class="bl_subscribeForDiscounts__box">
+                                <p class="bl_subscribeForDiscounts_text">підписатися</p>
+                                <p class="bl_subscribeForDiscounts_text"><span>на</span>
+                                    <button class="bl_subscribeForDiscounts_text bl_subscribeForDiscounts_button">знижки</button>
+                                </p>
+                            </div>
+                            <input class="search_field" type="search">
+                            <button class="search_button"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-offset-1 col-md-4">
+                    <nav class="bl_navigation">
+                        <ul class="bl_navigation__fullNavigation">
+                            <li class="bl_navigation__item"><a href="#" class="bl_navigation__link">Наші переваги</a></li>
+                            <li class="bl_navigation__item"><a href="#" class="bl_navigation__link">Каталог</a></li>
+                            <li class="bl_navigation__item"><a href="#" class="bl_navigation__link">Де купити</a></li>
+                            <li class="bl_navigation__item"><a href="#" class="bl_navigation__link">Проекти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-xs-12 col-md-offset-1 col-md-3">
+                    <div class="bl_loadingCatalogs">
+                        <div class="col-xs-6">
+                            <p class="bl_loadingCatalogs__item">Завантажити:</p>
+                            <p class="bl_loadingCatalogs__item bl_loadingCatalogs__item_orange bl_loadingCatalogs__item_decor1">всі файли</p>
+                            <p class="bl_loadingCatalogs__item bl_loadingCatalogs__item_orange bl_loadingCatalogs__item_decor2">декори</p>
+                        </div>
+                        <div class="col-xs-2">
+                            <p class="bl_loadingCatalogs__item">kids</p>
+                            <button class="bl_loadingCatalogs__item bl_loadingCatalogs__button_max"></button>
+                            <button class="bl_loadingCatalogs__item bl_loadingCatalogs__button_pdf"></button>
+                        </div>
+                        <div class="col-xs-2">
+                            <p class="bl_loadingCatalogs__item">parents</p>
+                            <button class="bl_loadingCatalogs__item bl_loadingCatalogs__button_max"></button>
+                            <button class="bl_loadingCatalogs__item bl_loadingCatalogs__button_pdf"></button>
+                        </div>
+                        <div class="col-xs-2">
+                            <p class="bl_loadingCatalogs__item">office</p>
+                            <button class="bl_loadingCatalogs__item bl_loadingCatalogs__button_max"></button>
+                            <button class="bl_loadingCatalogs__item bl_loadingCatalogs__button_pdf"></button>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="bl_copyrighted">
+                                <p class="bl_copyrighted__text">© 2017 Mimi. Всі права захищені.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 

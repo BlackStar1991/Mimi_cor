@@ -1,0 +1,136 @@
+.footer{
+  padding-top: 5%; // 43px
+}
+
+
+.bl_contacts{
+
+  &__adress{
+    margin-top: 2px;
+    font-family: $ArialRoundedBold;
+    font-size: 12px;
+    line-height: 12px;
+
+    &_tel{
+      font-family: $ArialRoundedBold;
+      font-size: 21px;
+      line-height: 11px;
+    }
+
+    &_email{
+      vertical-align: middle;
+      color: $color_lightWhite;
+      font-family: $ArialRoundedBold;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 12px;
+    }
+  }
+
+}
+
+.bl_subscribeForDiscounts{
+  margin-top: 16px;
+
+
+  &__email{
+    display: inline-block;
+    border: none;
+    outline: none;
+    @include sprite($decor-fild-email);
+    &::placeholder{
+      color: $color_orange;
+    }
+  }
+  
+  
+  &__box{
+    display: inline-block;
+  }
+  &_text{
+  
+    font-family: $ArialRoundedBold;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000;
+  }
+  &_button{
+    background: none;
+    color: $color_lightWhite;
+  }
+}
+
+.search{
+  &_field{
+    width: 60%;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: none;
+    outline: none;
+  }
+  &_button{
+    display: inline-block;
+    @include sprite($loupe);
+    outline: none;
+    border: none;
+  }
+}
+
+
+.bl_navigation{
+  &__fullNavigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item{
+
+  }
+  &__link{
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-family: $ArialRoundedBold;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+}
+
+
+
+.bl_loadingCatalogs{
+
+  &__item{
+    position: relative;
+    color: $color_lightWhite;
+    font-family: $ArialRoundedBold;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    z-index:3;
+
+    &_orange{
+      color: $color_orange;
+    }
+    &_decor1{
+      &:after{
+        position: absolute;
+        content: "";
+        @include sprite($decor-fild-white1);
+        z-index:2;
+      }
+    }
+    &_decor2{
+      &:after{
+        position: absolute;
+        content: "";
+        @include sprite($decor-fild-white2);
+        z-index:2;
+      }
+    }
+  }
+
+}

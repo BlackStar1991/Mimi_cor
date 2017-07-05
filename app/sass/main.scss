@@ -95,15 +95,6 @@ button {
 /*SECTIONS*/
 /*********************************************/
 
-.mainWrapper {
-  position: relative;
-  width: 100%;
-  min-width: 320px;
-  height: 100%;
-  padding: 0;
-  margin: 0 !important;
-  overflow: hidden;
-}
 
 .bl_main {
   clear: both;
@@ -175,6 +166,33 @@ button {
     margin-left: 30px;
     background: transparent url("../img/arrow_left.svg") 50% 50% no-repeat;
   }
+
+//  CHOOSE SLIDER
+
+  &__block{
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    display: block;
+    z-index:999;
+  }
+  &_item{
+    display: block;
+    margin-top: 4px;
+    text-align: right;
+    font-family: $ArialRoundedBold;
+    font-size: 27px;
+    line-height: 25px;
+    cursor: pointer;
+
+    transition: all 0.3s;
+
+    &__active{
+      transition: all 0.3s;
+      color: $color_lightWhite;
+    }
+  }
+
 }
 
 .slider_hits {
@@ -199,6 +217,7 @@ button {
   &__img{
     margin-top: 38px;
     height: 363px;
+    padding: 5% 3%;
   }
 
   &__details {
@@ -208,6 +227,7 @@ button {
     font-size: 15px;
     font-weight: 400;
     line-height: 25px;
+    padding-left: 3%;
   }
 
   &__sale{
