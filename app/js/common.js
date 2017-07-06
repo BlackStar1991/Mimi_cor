@@ -2,24 +2,7 @@ $(document).ready(function () {
 
 
 
-    // Adress and menu psevdoslider
 
-    var menuSwich = $(".bl_eye-checkbox"),
-        blockAdress = $(".bl_nav__adress"),
-        blockNavigation = $(".bl_menu"),
-        blockAdress_animationClass = "bl_nav__adress__animate",
-        blockNavigation_aniamtionClass ="bl_menu__animate";
-
-    menuSwich.on("click", function(){
-
-        toggleClassAnimation(blockAdress, blockAdress_animationClass);
-        toggleClassAnimation(blockNavigation, blockNavigation_aniamtionClass);
-
-    });
-
-    function toggleClassAnimation(block, whatClass){
-        block.toggleClass(whatClass);
-    }
 
     // decor line under navigation words
     $(".bl_menu__word").each(function(){
@@ -41,12 +24,49 @@ $(document).ready(function () {
         fullItemsLength = fullItems.length;
     var activeItem = "bl_fullSliders_item__active";
 
+
+
+    var positionOfSlider = $(".sliderWrapper_animation__position");
+    var allSliders = $(".sliderWrapper");
+
+    console.log(positionOfSlider.eq(0).css("top") + " = top 1");
+    console.log(positionOfSlider.eq(1).css("top") + " = top 2");
+    console.log(positionOfSlider.eq(2).css("top") + " = top 3");
+
+
+
+    // work with vertical slider
     fullItems.on("click", function () {
+
 
         fullItems.removeClass(activeItem);
         $(this).addClass(activeItem);
 
+        var index = $(this).index();
+        console.log("index = " + $(this).index());
+
+        movingSliders (index);
+
+
     });
+
+
+
+    function movingSliders (index){
+
+        for(var i = 0; i< fullItemsLength; i++ ){
+
+
+            var currentTop = positionOfSlider.eq(i).css("top");
+            console.log(currentTop + "  =currentTop");
+
+                positionOfSlider.eq(i).animate({
+                    top: "-=" + 150*index + "%"
+                }, 1000);
+
+        }
+
+    }
 
 
 
@@ -67,6 +87,31 @@ $(document).ready(function () {
     owlSlider(sliderHits);
     owlSlider(sliderShares);
     owlSlider(sliderNews);
+
+    // Adress and menu psevdoslider
+
+    var menuSwich = $(".bl_eye-checkbox"),
+        blockAdress = $(".bl_nav__adress"),
+        blockNavigation = $(".bl_menu"),
+        blockAdress_animationClass = "bl_nav__adress__animate",
+        blockNavigation_aniamtionClass ="bl_menu__animate";
+
+
+
+
+    menuSwich.on("click", function(){
+
+        toggleClassAnimation(blockAdress, blockAdress_animationClass);
+        toggleClassAnimation(blockNavigation, blockNavigation_aniamtionClass);
+
+    });
+
+    function toggleClassAnimation(block, whatClass){
+        block.toggleClass(whatClass);
+    }
+
+
+
 
 
 

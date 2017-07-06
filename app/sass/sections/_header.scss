@@ -28,7 +28,7 @@
   width: 95px;
   height: 95px;
 
-  border: 1px solid green;
+  //border: 1px solid green;
   box-sizing: border-box;
   z-index:999;
 
@@ -101,7 +101,7 @@
 
   .swich_text {
     font-size: 14px;
-    font-family: $ArialRoundedBold;
+    font-family: $Arciform;
     fill: $color_orange;
   }
 
@@ -152,8 +152,6 @@ $animationTime: 0.4s;
   min-height: 150px;
   display: inline-block;
   box-sizing: border-box;
-
-  //border: 1px solid #0f0;
   overflow: hidden;
 
 
@@ -275,7 +273,7 @@ $animationTime: 0.4s;
     float: right;
 
     color: $color_lightWhite;
-    font-family: $ArialRoundedBold;
+    font-family: $Arciform;
     font-size: 20px;
     line-height: 10px;
   }

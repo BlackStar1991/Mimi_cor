@@ -5,34 +5,35 @@
 
 
 .bl_fullFooter{
-
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   margin-top: 43px;
 }
 
 
 .bl_contacts{
-  float: left;
+  //float: left;
   max-width: 300px;
 
   &__adress{
     margin-top: 2px;
-    font-family: $ArialRoundedBold;
+    font-family: $Arciform;
     font-size: 16px;
 
 
     &_tel{
-      font-family: $ArialRoundedBold;
+      font-family: $Arciform;
       font-size: 21px;
       line-height: 11px;
     }
 
     &_email{
-
+      vertical-align: top;
       color: $color_lightWhite;
       transform: translateY(-50%);
-      font-family: $ArialRoundedBold;
-      font-size: 11px;
+      font-family: $Arciform;
+      font-size: 13px;
       font-weight: 400;
 
     }
@@ -46,11 +47,17 @@
 
   &__email{
     display: inline-block;
+    vertical-align: top;
+    transform: translateY(50%);
     border: none;
     outline: none;
+    color: #fff;
+    font-size: 15px;
+    text-indent: 10px;
     @include sprite($decor-fild-email);
     background-color: transparent;
     &::placeholder{
+      text-indent: 10px;
       font-size: 0.7em;
       padding-left: 2%;
       color: $color_orange;
@@ -62,11 +69,12 @@
     display: inline-block;
   }
   &_text{
-  
-    font-family: $ArialRoundedBold;
-    font-size: 12px;
-    line-height: 12px;
-    color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: $Arciform;
+    font-size: 14px;
+
+
   }
   &_button{
     background: none;
@@ -100,21 +108,23 @@
 
 
 .bl_navigation{
-
-  margin: 0 auto;
+  display: inline-block;
 
   &__fullNavigation{
+    display: block;
+    margin: 0 auto;
 
   }
   &__item{
     display: inline-block;
+    //padding: 0 1%;
   }
   &__link{
     width: 100%;
     height: 100%;
     color: #000;
-    font-family: $ArialRoundedBold;
-    font-size: 11px;
+    font-family: $Arciform;
+    font-size: 16px;
     font-weight: 400;
     line-height: 12px;
   }
@@ -123,51 +133,60 @@
 
 
 .bl_loadingCatalogs{
-  float: right;
-  max-width: 320px;
+  //float: right;
+  max-width: 420px;
+
+
+  &__col{
+    float: left;
+  }
 
   &__item{
     position: relative;
     text-align: center;
     color: $color_lightWhite;
-    font-family: $ArialRoundedBold;
-    //text-align: right;
+    font-family: $Arciform;
     font-size: 18px;
     font-weight: 400;
     z-index:3;
 
-    &_orange{
+    &_text{
+      font-size: 14px;
+      line-height: 2;
+      //text-align: center;
       color: $color_orange;
     }
+
+    &_black{
+      color: #000;
+      padding:0 10%;
+    }
+
+
+
     &_decor1{
-      &:after{
-        position: absolute;
-        content: "";
+      clear: both;
+      float: right;
         @include sprite($decor-fild-white1);
-        background-color: transparent;
-        z-index:2;
-      }
     }
     &_decor2{
-      &:after{
-        position: absolute;
-        content: "";
+      clear: both;
+      float: right;
         @include sprite($decor-fild-white2);
-        background-color: transparent;
-        z-index:2;
-      }
     }
   }
 
   &__button{
 
     &_max{
+      display: block;
       margin: 0 auto;
       @include sprite($max);
       background-color: transparent;
     }
 
     &_pdf{
+      display: block;
       margin: 0 auto;
       @include sprite($pdf);
       background-color: transparent;
@@ -178,11 +197,12 @@
 }
 
 .bl_copyrighted{
+  clear: both;
   margin-top: 1%;
   width: 100%;
   &__text{
     text-align: right;
-    font-family: $ArialRoundedBold;
+    font-family: $Arciform;
     font-size: 16px;         ////////////////////
     font-weight: 400;
   }
