@@ -162,7 +162,7 @@ $animationTime: 0.4s;
     position: absolute;
     width: 100%;
     top: 0;
-    left: 0;
+    left: -3%;
     transition: left $animationTime;
     &__animate{
       left: -110%;
@@ -198,6 +198,7 @@ $animationTime: 0.4s;
   // SOCBUTTONS
 
   &__socButtons{
+    margin-top: 2%;
     clear: both;
     float: right;
 
@@ -221,6 +222,36 @@ $animationTime: 0.4s;
     @include sprite($instagram);
   }
 }
+
+.bl_language{
+  float: right;
+  margin-right: 5%;
+
+  &__label{
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__ratio{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    opacity: 0;
+
+    &:checked + .bl_language__text{
+      color: $color_orange;
+      background-color: #000;
+      border-radius: 10px;
+    }
+  }
+
+  &__text{
+    font-size: 18px;
+
+  }
+}
+
+
 
 .bl_menu{
   position: absolute;
@@ -294,6 +325,21 @@ $animationTime: 0.4s;
     }
 
   }
+  //letter decor
+  .letter_decor{
+    position: relative;
+    width:auto;
+    &:after{
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: -258%;
+      width: 1px;
+      height: 80px;
+      background-color: $color_lightWhite;
+    }
+  }
+
 
   &__icon{
     //display: none;

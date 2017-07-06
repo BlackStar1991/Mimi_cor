@@ -73,7 +73,7 @@
                                 </label>
 
                             </div>
-                            <div class="bl_nav bl_nav__animate_initialPosition">
+                            <div class="bl_nav">
                                 <div class="wrapperBlock">
                                     <div class="bl_nav__adress">
                                         <p class="bl_nav__tel">
@@ -87,17 +87,23 @@
                                             <a href="#" class="bl_nav__instagram"></a>
                                         </div>
                                         <div class="bl_language">
-                                            <input class="bl_language__ratio" id="radio_ukr" type="radio" name="languageButton" value="ukr">
+
                                             <label class="bl_language__label" for="radio_ukr">
-                                                <span  class="bl_language__text">ukr</span>
+                                                <input class="bl_language__ratio" id="radio_ukr" type="radio"
+                                                       name="languageButton" value="ukr" checked>
+                                                <span class="bl_language__text">ukr</span>
                                             </label>
-                                            <input class="bl_language__ratio" id="radio_eng" type="radio" name="languageButton" value="eng">
+
                                             <label class="bl_language__label" for="radio_eng">
-                                                <span  class="bl_language__text">eng</span>
+                                                <input class="bl_language__ratio" id="radio_eng" type="radio"
+                                                       name="languageButton" value="eng">
+                                                <span class="bl_language__text">eng</span>
                                             </label>
-                                            <input class="bl_language__ratio" id="radio_rus" type="radio" name="languageButton" value="rus">
+
                                             <label class="bl_language__label" for="radio_rus">
-                                                <span  class="bl_language__text">rus</span>
+                                                <input class="bl_language__ratio" id="radio_rus" type="radio"
+                                                       name="languageButton" value="rus">
+                                                <span class="bl_language__text">rus</span>
                                             </label>
 
 
@@ -110,7 +116,8 @@
                                             <ul class="bl_menu__fullMenu">
                                                 <li class="bl_menu__item"><a class="bl_menu__link" href="#">
                                                     <div class="bl_menu__icon bl_menu__icon_mi"></div>
-                                                    <p class="bl_menu__word bl_menu__word_decor">чому</p>
+                                                    <p class="bl_menu__word bl_menu__word_decor"><span
+                                                            class="letter_decor">ч</span>ому</p>
                                                 </a></li>
                                                 <li class="bl_menu__item"><a class="bl_menu__link" href="#">
                                                     <div class="bl_menu__icon bl_menu__icon_chair"></div>
@@ -157,6 +164,20 @@
                         <div class="bl_fullSliders">
                             <ul class="slider_hits owl-carousel owl-theme">
                                 <li class="slider_hits__item">
+                                    <h2 class="slider_item__title">«Саламандра»</h2>
+                                    <img class="slider_item__hits" src="img/bestseller.png" alt="hits">
+                                    <img class="slider_item__img" src="img/goods/item2.png" alt="item2">
+                                    <a class="slider_item__details" href="#">дізнатись більше...</a>
+                                </li>
+                                <li class="slider_hits__item">
+                                    <h2 class="slider_item__title">HITS2</h2>
+                                    <img class="slider_item__hits" src="img/bestseller.png" alt="hits">
+                                    <img class="slider_item__img" src="http://dummyimage.com/360x363/f00" alt="2">
+                                    <a class="slider_item__details" href="#">дізнатись більше...</a>
+                                </li>
+                            </ul>
+                            <ul class="slider_shares owl-carousel owl-theme">
+                                <li class="slider_shares__item">
                                     <h2 class="slider_item__title">Парта-трансформер «Mimi»</h2>
                                     <p class="slider_item__sale">- <span class="slider_item__sale_number">30</span> %
                                     </p>
@@ -177,15 +198,22 @@
                                     <a class="slider_item__details" href="#">дізнатись більше...</a>
                                 </li>
                             </ul>
-                            <ul class="slider_shares">
-                                <li class="slider_shares__item"></li>
-                                <li class="slider_shares__item"></li>
-                                <li class="slider_shares__item"></li>
-                            </ul>
-                            <ul class="slider_news">
-                                <li class="slider_news__item"></li>
-                                <li class="slider_news__item"></li>
-                                <li class="slider_news__item"></li>
+                            <ul class="slider_news owl-carousel owl-theme">
+                                <li class="slider_news__item">
+                                    <h2 class="slider_item__title">NEWS1</h2>
+                                    <img class="slider_item__img" src="http://dummyimage.com/360x363/0f0" alt="">
+                                    <a class="slider_item__details" href="#">дізнатись більше...</a>
+                                </li>
+                                <li class="slider_news__item">
+                                    <h2 class="slider_item__title">NEWS2</h2>
+                                    <img class="slider_item__img" src="http://dummyimage.com/360x363/0f0" alt="">
+                                    <a class="slider_item__details" href="#">дізнатись більше...</a>
+                                </li>
+                                <li class="slider_news__item">
+                                    <h2 class="slider_item__title">NEWS3</h2>
+                                    <img class="slider_item__img" src="http://dummyimage.com/360x363/0f0" alt="">
+                                    <a class="slider_item__details" href="#">дізнатись більше...</a>
+                                </li>
                             </ul>
 
                             <!--CHOOSE SLIDER -->
@@ -209,68 +237,80 @@
     <div class="mainWrapper">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-md-3">
-                    <div class="bl_contacts">
-                        <p class="bl_contacts__adress">04074, м. Київ, вул. Новозабарська, 2/6</p>
-                        <p class="bl_contacts__adress">
-                            <span class="bl_contacts__adress_tel">044 222 51 21</span>
-                            <span class="bl_contacts__adress_email">info@mimi.ua</span>
-                        </p>
-                        <div class="bl_subscribeForDiscounts">
-                            <input class="bl_subscribeForDiscounts__email" type="email" placeholder="email">
-                            <div class="bl_subscribeForDiscounts__box">
-                                <p class="bl_subscribeForDiscounts_text">підписатися</p>
-                                <p class="bl_subscribeForDiscounts_text"><span>на</span>
-                                    <button class="bl_subscribeForDiscounts_text bl_subscribeForDiscounts_button">знижки</button>
-                                </p>
+                <div class="col-md-12">
+                    <div class="bl_fullFooter">
+                        <div class="bl_contacts">
+                            <p class="bl_contacts__adress">04074, м. Київ, вул. Новозабарська, 2/6</p>
+                            <p class="bl_contacts__adress">
+                                <span class="bl_contacts__adress_tel">044 222 51 21</span>
+                                <span class="bl_contacts__adress_email">info@mimi.ua</span>
+                            </p>
+                            <div class="bl_subscribeForDiscounts">
+                                <form action="">
+                                    <input class="bl_subscribeForDiscounts__email" type="email" placeholder="e-mail">
+                                    <div class="bl_subscribeForDiscounts__box">
+                                        <p class="bl_subscribeForDiscounts_text">підписатися</p>
+                                        <p class="bl_subscribeForDiscounts_text"><span>на</span>
+                                            <button class="bl_subscribeForDiscounts_text bl_subscribeForDiscounts_button">
+                                                знижки
+                                            </button>
+                                        </p>
+                                    </div>
+                                </form>
+                                <input class="search_field" type="search">
+                                <button class="search_button"></button>
                             </div>
-                            <input class="search_field" type="search">
-                            <button class="search_button"></button>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-offset-1 col-md-4">
-                    <nav class="bl_navigation">
-                        <ul class="bl_navigation__fullNavigation">
-                            <li class="bl_navigation__item"><a href="#" class="bl_navigation__link">Наші переваги</a></li>
-                            <li class="bl_navigation__item"><a href="#" class="bl_navigation__link">Каталог</a></li>
-                            <li class="bl_navigation__item"><a href="#" class="bl_navigation__link">Де купити</a></li>
-                            <li class="bl_navigation__item"><a href="#" class="bl_navigation__link">Проекти</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-xs-12 col-md-offset-1 col-md-3">
-                    <div class="bl_loadingCatalogs">
-                        <div class="col-xs-6">
+
+
+                        <nav class="bl_navigation">
+                            <ul class="bl_navigation__fullNavigation">
+                                <li class="bl_navigation__item"><a href="#"
+                                                                   class="bl_navigation__link">Наші переваги</a>
+                                </li>
+                                <li class="bl_navigation__item"><a href="#" class="bl_navigation__link">Каталог</a></li>
+                                <li class="bl_navigation__item"><a href="#" class="bl_navigation__link">Де купити</a>
+                                </li>
+                                <li class="bl_navigation__item"><a href="#" class="bl_navigation__link">Проекти</a></li>
+                            </ul>
+                        </nav>
+
+
+                        <div class="bl_loadingCatalogs">
+
                             <p class="bl_loadingCatalogs__item">Завантажити:</p>
-                            <p class="bl_loadingCatalogs__item bl_loadingCatalogs__item_orange bl_loadingCatalogs__item_decor1">всі файли</p>
-                            <p class="bl_loadingCatalogs__item bl_loadingCatalogs__item_orange bl_loadingCatalogs__item_decor2">декори</p>
-                        </div>
-                        <div class="col-xs-2">
+                            <p class="bl_loadingCatalogs__item bl_loadingCatalogs__item_orange bl_loadingCatalogs__item_decor1">
+                                всі файли</p>
+                            <p class="bl_loadingCatalogs__item bl_loadingCatalogs__item_orange bl_loadingCatalogs__item_decor2">
+                                декори</p>
+
+
                             <p class="bl_loadingCatalogs__item">kids</p>
                             <button class="bl_loadingCatalogs__item bl_loadingCatalogs__button_max"></button>
                             <button class="bl_loadingCatalogs__item bl_loadingCatalogs__button_pdf"></button>
-                        </div>
-                        <div class="col-xs-2">
+
+
                             <p class="bl_loadingCatalogs__item">parents</p>
                             <button class="bl_loadingCatalogs__item bl_loadingCatalogs__button_max"></button>
                             <button class="bl_loadingCatalogs__item bl_loadingCatalogs__button_pdf"></button>
-                        </div>
-                        <div class="col-xs-2">
+
+
                             <p class="bl_loadingCatalogs__item">office</p>
-                            <button class="bl_loadingCatalogs__item bl_loadingCatalogs__button_max"></button>
+                            <button class="bl_loadingCatalogs__iytem bl_loadingCatalogs__button_max"></button>
                             <button class="bl_loadingCatalogs__item bl_loadingCatalogs__button_pdf"></button>
                         </div>
-                        <div class="col-xs-12">
-                            <div class="bl_copyrighted">
-                                <p class="bl_copyrighted__text">© 2017 Mimi. Всі права захищені.</p>
-                            </div>
+
+                        <div class="bl_copyrighted">
+                            <p class="bl_copyrighted__text">© 2017 Mimi. Всі права захищені.</p>
                         </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
+
 </footer>
 
 <!-- build:js js/libs.min.js -->

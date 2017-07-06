@@ -97,12 +97,14 @@ button {
 
 
 .bl_main {
+  position: relative;
   clear: both;
   background: $color_orange url("../img/setkaMin.png") 50% 50% repeat;
   width: 100%;
   padding-top: 4px;
   border-top: 1px double #000;
   border-bottom: 2px solid #000;
+  //overflow: hidden;
 }
 
 .bl_orange {
@@ -112,6 +114,7 @@ button {
 .bl_video {
 
   position: relative;
+  margin-top: 1%;
   width: 100%;
   min-height: $minHeghtMainPage;
   background-color: rgba(0, 0, 0, 0.25);
@@ -188,8 +191,21 @@ button {
     transition: all 0.3s;
 
     &__active{
+      position: relative;
       transition: all 0.3s;
       color: $color_lightWhite;
+      text-decoration: underline;
+
+      &:after{
+        content: "";
+        position: absolute;
+        width: 315%;
+        height: 20px;
+        left: 112%;
+        top: 25%;
+        background: url("../img/activeItemGrid.png") 50% 50% repeat-x;
+        z-index:3;
+      }
     }
   }
 
@@ -218,6 +234,12 @@ button {
     margin-top: 38px;
     height: 363px;
     padding: 5% 3%;
+  }
+
+  &__hits{
+    position: absolute;
+    top: 10%;
+    max-width: 40%;     ///////// исправить поставить нормальную фотку
   }
 
   &__details {

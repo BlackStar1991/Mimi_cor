@@ -1,15 +1,25 @@
 .footer{
-  padding-top: 5%; // 43px
+  padding-top: 4px;
+  border-top: 2px double #000;
+}
+
+
+.bl_fullFooter{
+
+  width: 100%;
+  margin-top: 43px;
 }
 
 
 .bl_contacts{
+  float: left;
+  max-width: 300px;
 
   &__adress{
     margin-top: 2px;
     font-family: $ArialRoundedBold;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 16px;
+
 
     &_tel{
       font-family: $ArialRoundedBold;
@@ -18,19 +28,20 @@
     }
 
     &_email{
-      vertical-align: middle;
+
       color: $color_lightWhite;
+      transform: translateY(-50%);
       font-family: $ArialRoundedBold;
       font-size: 11px;
       font-weight: 400;
-      line-height: 12px;
+
     }
   }
 
 }
 
 .bl_subscribeForDiscounts{
-  margin-top: 16px;
+ margin-top: 2%;
 
 
   &__email{
@@ -38,7 +49,10 @@
     border: none;
     outline: none;
     @include sprite($decor-fild-email);
+    background-color: transparent;
     &::placeholder{
+      font-size: 0.7em;
+      padding-left: 2%;
       color: $color_orange;
     }
   }
@@ -61,8 +75,14 @@
 }
 
 .search{
+
+
   &_field{
+    margin-top: 8%;
+
     width: 60%;
+    font-size: 16px;
+    transform: translateY(-50%);
     display: inline-block;
     border: none;
     border-bottom: 1px solid #000;
@@ -72,6 +92,7 @@
   &_button{
     display: inline-block;
     @include sprite($loupe);
+    background-color: transparent;
     outline: none;
     border: none;
   }
@@ -79,13 +100,14 @@
 
 
 .bl_navigation{
+
+  margin: 0 auto;
+
   &__fullNavigation{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
   }
   &__item{
-
+    display: inline-block;
   }
   &__link{
     width: 100%;
@@ -101,15 +123,17 @@
 
 
 .bl_loadingCatalogs{
+  float: right;
+  max-width: 320px;
 
   &__item{
     position: relative;
+    text-align: center;
     color: $color_lightWhite;
     font-family: $ArialRoundedBold;
-    text-align: right;
-    font-size: 12px;
+    //text-align: right;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 12px;
     z-index:3;
 
     &_orange{
@@ -120,6 +144,7 @@
         position: absolute;
         content: "";
         @include sprite($decor-fild-white1);
+        background-color: transparent;
         z-index:2;
       }
     }
@@ -128,9 +153,38 @@
         position: absolute;
         content: "";
         @include sprite($decor-fild-white2);
+        background-color: transparent;
         z-index:2;
       }
     }
   }
 
+  &__button{
+
+    &_max{
+      margin: 0 auto;
+      @include sprite($max);
+      background-color: transparent;
+    }
+
+    &_pdf{
+      margin: 0 auto;
+      @include sprite($pdf);
+      background-color: transparent;
+    }
+
+  }
+
 }
+
+.bl_copyrighted{
+  margin-top: 1%;
+  width: 100%;
+  &__text{
+    text-align: right;
+    font-family: $ArialRoundedBold;
+    font-size: 16px;         ////////////////////
+    font-weight: 400;
+  }
+}
+
