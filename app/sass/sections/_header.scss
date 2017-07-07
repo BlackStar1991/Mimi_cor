@@ -1,10 +1,22 @@
 
 .bl_header {
+  position: relative;
   background-color: $color_orange;
   width: 100%;
-  min-height: 130px;
+  //min-height: 130px;
+  padding-bottom: 20px;
 
-  border-bottom: 2px solid #000;
+
+  &:after{
+    height: 50px;
+    width: 100%;
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    background: url("../../img/threeLine.png") 50% 50% repeat-x;
+    z-index:1000;
+  }
 
 
   &__full {
