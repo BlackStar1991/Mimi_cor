@@ -13,13 +13,13 @@
 
 
 .bl_contacts{
-  //float: left;
+  margin-top: 4%;
   max-width: 300px;
 
   &__adress{
-    margin-top: 2px;
+
     font-family: $Arciform;
-    font-size: 16px;
+    font-size: 15px;
 
 
     &_tel{
@@ -84,7 +84,6 @@
 
 .search{
 
-
   &_field{
     margin-top: 8%;
 
@@ -108,16 +107,17 @@
 
 
 .bl_navigation{
+  width: 100%;
+  margin-top: 8%;
+
   display: inline-block;
 
   &__fullNavigation{
-    display: block;
-    margin: 0 auto;
-
+    display: flex;
+    justify-content: space-around;
   }
   &__item{
-    display: inline-block;
-    //padding: 0 1%;
+
   }
   &__link{
     width: 100%;
@@ -133,7 +133,7 @@
 
 
 .bl_loadingCatalogs{
-  //float: right;
+  margin-top: 4%;
   max-width: 420px;
 
 
@@ -146,7 +146,7 @@
     text-align: center;
     color: $color_lightWhite;
     font-family: $Arciform;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     z-index:3;
 
@@ -198,11 +198,13 @@
 
 .bl_copyrighted{
   clear: both;
-  margin-top: 1%;
+  margin-top: 27%;
+
   width: 100%;
   &__text{
     text-align: right;
     font-family: $Arciform;
+    padding-right: 6%;
     font-size: 16px;         ////////////////////
     font-weight: 400;
   }

@@ -104,7 +104,7 @@ button {
   padding-top: 4px;
   border-top: 1px double #000;
   border-bottom: 2px solid #000;
-  //overflow: hidden;
+  overflow: hidden;
 }
 
 .bl_orange {
@@ -154,7 +154,7 @@ button {
     width: 100%;
     min-height: 465px !important;
 
-    //overflow: hidden;  ///////////////
+    overflow: hidden;  ///////////////
   }
 
   .sliderWrapper{
@@ -179,16 +179,16 @@ button {
 
     .owl-nav{
       position: absolute;
-      width: 15%;
+      width: 100%;
       top: 0;
       left: 0;
     }
     .owl-carousel .owl-nav .owl-next{
-      float: right;
+      float: left;
       font-size: 0;
       width: 75px;
       margin-top: 20px;
-      margin-right: 30px;
+      margin-left: 140px;    ///////////////////
       background: transparent url("../img/arrow_right.svg")50% 50% no-repeat;
     }
     .owl-carousel .owl-nav .owl-prev{
@@ -286,7 +286,10 @@ button {
   &__hits{
     position: absolute;
     top: 10%;
-    max-width: 40%;     ///////// исправить поставить нормальную фотку
+    left: 0%;
+    width: 162px;     ///////// исправить поставить нормальную фотку
+    height: 155px;
+    background: url("../img/bestseller.png") 50% 50% no-repeat;
   }
 
   &__details {

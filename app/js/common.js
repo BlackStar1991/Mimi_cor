@@ -54,18 +54,19 @@ $(document).ready(function () {
 
     function movingSliders (index){
 
-        for(var i = 0; i< fullItemsLength; i++ ){
-
-
-            var currentTop = positionOfSlider.eq(i).css("top");
-            console.log(currentTop + "  =currentTop");
-
-                positionOfSlider.eq(i).animate({
-                    top: "-=" + 150*index + "%"
-                }, 1000);
-
+        if (index === 0){
+            positionOfSlider.eq(0).animate({top: "0"}, 1000);
+            positionOfSlider.eq(1).animate({top: "150%"}, 1000);
+            positionOfSlider.eq(2).animate({top: "300%"}, 1000);
+        }else if (index === 1){
+            positionOfSlider.eq(0).animate({top: "-150%"}, 1000);
+            positionOfSlider.eq(1).animate({top: "0"}, 1000);
+            positionOfSlider.eq(2).animate({top: "150%"}, 1000);
+        }else {
+            positionOfSlider.eq(0).animate({top: "-300%"}, 1000);
+            positionOfSlider.eq(1).animate({top: "-150%"}, 1000);
+            positionOfSlider.eq(2).animate({top: "0"}, 1000);
         }
-
     }
 
 
