@@ -13,7 +13,7 @@
     position: absolute;
     top: -20px;
     left: 0;
-    background: url("../../img/threeLine.png") 50% 50% repeat-x;
+    background: url("../img/threeLine.png") 50% 50% repeat-x;
   }
 
 }
@@ -124,7 +124,7 @@
 .bl_navigation{
   width: 100%;
   margin-top: 8%;
-
+  padding-right: 15%; ///////////////////////
   display: inline-block;
 
   &__fullNavigation{

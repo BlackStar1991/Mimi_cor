@@ -844,6 +844,7 @@ hr {
 body {
   height: 100%;
   font-family: sans-serif;
+  font-family: "ArciformSanscyr", sans-serif;
   font-size: 25px;
   font-weight: 400;
   color: #000;
@@ -856,7 +857,8 @@ body {
   min-width: 320px;
   height: 100%;
   padding: 0;
-  margin: 0 !important; }
+  margin: 0 !important;
+  overflow: hidden; }
 
 .wrapperBlock {
   position: relative;
@@ -908,19 +910,21 @@ button {
     width: 100%;
     content: "";
     position: absolute;
-    bottom: -20px;
+    bottom: -18px;
     left: 0;
-    background: url("../../img/threeLine.png") 50% 50% repeat-x;
+    background: url("../img/threeLine.png") 50% 50% repeat-x;
     z-index: 1000; }
-  .bl_header__full {
-    margin-top: 2%;
-    padding-bottom: 2%; }
+  .bl_header__logo {
+    width: auto; }
+    .bl_header__logo_link {
+      display: inline-block; }
 
 .bl_eye {
   position: relative;
   display: inline-block;
   vertical-align: bottom;
-  margin-left: 10%;
+  margin-top: 4.5%;
+  margin-left: 11%;
   width: 95px;
   height: 95px;
   box-sizing: border-box;
@@ -1001,7 +1005,7 @@ button {
   position: relative;
   padding-top: 3%;
   float: right;
-  width: 320px;
+  width: 382px;
   min-height: 150px;
   display: inline-block;
   box-sizing: border-box;
@@ -1013,7 +1017,7 @@ button {
     left: -3%;
     transition: left 0.4s; }
     .bl_nav__adress__animate {
-      left: -110%;
+      left: -125%;
       transition: left 0.4s; }
   .bl_nav__tel {
     text-align: right;
@@ -1073,7 +1077,8 @@ button {
     .bl_language__ratio:checked + .bl_language__text {
       color: #ed7d31;
       background-color: #000;
-      border-radius: 10px; }
+      border-radius: 14px;
+      padding: 0 4px; }
   .bl_language__text {
     font-size: 18px; }
 
@@ -1081,13 +1086,14 @@ button {
   position: absolute;
   width: 100%;
   top: 0;
-  left: 110%;
+  left: 125%;
   transition: left 0.4s; }
   .bl_menu__animate {
     left: 0;
     transition: left 0.4s; }
   .bl_menu__fullMenu {
     width: 100%;
+    padding-left: 8%;
     margin-top: 20px;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1143,9 +1149,9 @@ button {
       content: "";
       position: absolute;
       left: 50%;
-      top: -258%;
+      bottom: 50%;
       width: 1px;
-      height: 80px;
+      height: 300px;
       background-color: #fad9c2; }
   .bl_menu__icon {
     position: absolute;
@@ -1209,7 +1215,8 @@ button {
 
 html,
 body {
-  height: 100%; }
+  height: 100%;
+  background-color: #ed7d31; }
 
 .fullPage {
   display: -webkit-flex;
@@ -1230,7 +1237,7 @@ body {
   height: 100%;
   position: relative;
   clear: both;
-  background: #ed7d31 url("../img/setkaMin.png") 50% 50% repeat;
+  background: #ed7d31 url("../img/setkaMin.png") 50% 100% repeat;
   box-sizing: border-box;
   overflow: hidden; }
 
@@ -1244,6 +1251,8 @@ body {
   box-sizing: border-box;
   min-height: 610px;
   background-color: rgba(0, 0, 0, 0.25); }
+  .bl_video__background {
+    width: 100%; }
   .bl_video__play-triangle {
     position: absolute;
     top: 50%;
@@ -1279,7 +1288,8 @@ body {
   .bl_fullSliders__work {
     position: relative;
     width: 100%;
-    min-height: 465px !important;
+    height: 100%;
+    min-height: 608px !important;
     overflow: hidden; }
   .bl_fullSliders .sliderWrapper {
     position: absolute; }
@@ -1292,6 +1302,9 @@ body {
     .bl_fullSliders .sliderWrapper_animation__position:nth-child(3) {
       z-index: 700;
       top: 300%; }
+    .bl_fullSliders .sliderWrapper .owl-carousel .owl-item img {
+      width: auto;
+      padding: 0; }
     .bl_fullSliders .sliderWrapper .owl-nav {
       position: absolute;
       width: 100%;
@@ -1302,14 +1315,14 @@ body {
       font-size: 0;
       width: 75px;
       margin-top: 20px;
-      margin-left: 140px;
+      margin-left: 154px;
       background: transparent url("../img/arrow_right.svg") 50% 50% no-repeat; }
     .bl_fullSliders .sliderWrapper .owl-carousel .owl-nav .owl-prev {
       float: left;
       font-size: 0;
       width: 75px;
       margin-top: 20px;
-      margin-left: 30px;
+      margin-left: 26px;
       background: transparent url("../img/arrow_left.svg") 50% 50% no-repeat; }
   .bl_fullSliders__block {
     position: absolute;
@@ -1334,9 +1347,9 @@ body {
       .bl_fullSliders_item__active:after {
         content: "";
         position: absolute;
-        width: 350%;
-        height: 20px;
-        left: 135%;
+        width: 1500%;
+        height: 23px;
+        left: 134%;
         top: 25%;
         background: url("../img/activeItemGrid.png") 50% 50% repeat-x;
         z-index: 3; }
@@ -1358,14 +1371,13 @@ body {
   width: 172px;
   display: block;
   text-align: center;
-  margin: 6px auto 0;
+  margin: 26px auto 0;
   font-family: "ArciformSanscyr", sans-serif;
   font-size: 15px;
   font-weight: 700; }
 
 .slider_item__img {
-  margin-top: 38px;
-  padding: 0 3%; }
+  margin-top: 38px; }
 
 .slider_item__hits {
   position: absolute;
@@ -1379,8 +1391,7 @@ body {
   color: #fad9c2;
   font-family: "ArciformSanscyr", sans-serif;
   font-size: 15px;
-  font-weight: 400;
-  padding-left: 3%; }
+  font-weight: 400; }
 
 .slider_item__sale {
   position: absolute;
@@ -1411,7 +1422,7 @@ body {
     position: absolute;
     top: -20px;
     left: 0;
-    background: url("../../img/threeLine.png") 50% 50% repeat-x; }
+    background: url("../img/threeLine.png") 50% 50% repeat-x; }
 
 .bl_fullFooter {
   display: -webkit-flex;
@@ -1518,6 +1529,7 @@ body {
 .bl_navigation {
   width: 100%;
   margin-top: 8%;
+  padding-right: 15%;
   display: inline-block; }
   .bl_navigation__fullNavigation {
     display: -webkit-flex;

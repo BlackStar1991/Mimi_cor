@@ -7,25 +7,33 @@
   padding-bottom: 20px;
 
 
+
+
   &:after{
     height: 50px;
     width: 100%;
     content: "";
     position: absolute;
-    bottom: -20px;
+    bottom: -18px;
     left: 0;
-    background: url("../../img/threeLine.png") 50% 50% repeat-x;
+    background: url("../img/threeLine.png") 50% 50% repeat-x;
     z-index:1000;
   }
 
 
   &__full {
-    margin-top: 2%;
-    padding-bottom: 2%; //////40px
+    //margin-top: 2%;
+    //padding-bottom: 2%; //////40px
   }
 
   &__logo{
 
+    width: auto;
+
+    &_link{
+      display: inline-block;
+
+    }
   }
 
 }
@@ -34,8 +42,8 @@
   position: relative;
   display: inline-block;
   vertical-align: bottom;
-
-  margin-left: 10%; //// 138px
+  margin-top: 4.5%;
+  margin-left: 11%; //// 138px
 
   width: 95px;
   height: 95px;
@@ -160,10 +168,11 @@ $animationTime: 0.4s;
   position: relative;
   padding-top: 3%;
   float: right;
-  width: 320px;
+  width: 382px;   /////////////////// 320
   min-height: 150px;
   display: inline-block;
   box-sizing: border-box;
+  //border: 1px solid green;
   overflow: hidden;
 
 
@@ -175,7 +184,7 @@ $animationTime: 0.4s;
     left: -3%;
     transition: left $animationTime;
     &__animate{
-      left: -110%;
+      left: -125%;
       transition: left $animationTime;
     }
 
@@ -251,7 +260,8 @@ $animationTime: 0.4s;
     &:checked + .bl_language__text{
       color: $color_orange;
       background-color: #000;
-      border-radius: 10px;
+      border-radius: 14px;
+      padding: 0 4px;
     }
   }
 
@@ -267,7 +277,7 @@ $animationTime: 0.4s;
   position: absolute;
   width: 100%;
   top: 0;
-  left: 110%; ///110%
+  left: 125%; ////////////////////////// 125%
 
   transition: left $animationTime;
 
@@ -277,7 +287,9 @@ $animationTime: 0.4s;
   }
 
   &__fullMenu{
+
     width: 100%;
+    padding-left: 8%;      ////////////////////////////
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -310,7 +322,7 @@ $animationTime: 0.4s;
   }
   &__word{
     display: inline-block;
-    opacity:0;
+    opacity:0;              //////////////
 
     &_decor{
       position: relative;
@@ -343,9 +355,9 @@ $animationTime: 0.4s;
       content: "";
       position: absolute;
       left: 50%;
-      top: -258%;
+      bottom: 50%;
       width: 1px;
-      height: 80px;
+      height: 300px;
       background-color: $color_lightWhite;
     }
   }
