@@ -227,19 +227,28 @@ $animationTime: 0.4s;
     float: right;
     vertical-align: top;
     margin-left: 10px;
-    @include sprite($email);
+    //@include sprite($email);
+    width: 32px;
+    height: 35px;
+    background: url("../img/email.svg") 50% 50% no-repeat;
   }
   &__facebook{
     float: right;
     vertical-align: top;
     margin-left: 10px;
-    @include sprite($facebook);
+    //@include sprite($facebook);
+    width: 32px;
+    height: 35px;
+    background: url("../img/facebook.svg") 50% 50% no-repeat;
   }
 
   &__instagram{
     float: right;
     vertical-align: top;
-    @include sprite($instagram);
+    //@include sprite($instagram);
+    width: 32px;
+    height: 35px;
+    background: url("../img/instagram.svg") 50% 50% no-repeat;
   }
 }
 

@@ -1045,25 +1045,22 @@ button {
     float: right;
     vertical-align: top;
     margin-left: 10px;
-    background-image: url(../img/sprite.png);
-    background-position: -115px -158px;
     width: 32px;
-    height: 35px; }
+    height: 35px;
+    background: url("../img/email.svg") 50% 50% no-repeat; }
   .bl_nav__facebook {
     float: right;
     vertical-align: top;
     margin-left: 10px;
-    background-image: url(../img/sprite.png);
-    background-position: -76px -158px;
-    width: 34px;
-    height: 35px; }
+    width: 32px;
+    height: 35px;
+    background: url("../img/facebook.svg") 50% 50% no-repeat; }
   .bl_nav__instagram {
     float: right;
     vertical-align: top;
-    background-image: url(../img/sprite.png);
-    background-position: -36px -158px;
-    width: 35px;
-    height: 35px; }
+    width: 32px;
+    height: 35px;
+    background: url("../img/instagram.svg") 50% 50% no-repeat; }
 
 .bl_language {
   float: right;
