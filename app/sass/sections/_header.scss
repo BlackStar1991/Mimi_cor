@@ -31,6 +31,7 @@
     width: auto;
 
     &_link{
+      margin-bottom: 2%;
       display: inline-block;
 
     }
@@ -42,7 +43,7 @@
   position: relative;
   display: inline-block;
   vertical-align: bottom;
-  margin-top: 4.5%;
+  margin-top: 4.1%;
   margin-left: 11%; //// 138px
 
   width: 95px;
@@ -166,7 +167,7 @@ $animationTime: 0.4s;
 
 .bl_nav{
   position: relative;
-  padding-top: 3%;
+  padding-top: 1.7%;
   float: right;
   width: 382px;   /////////////////// 320
   min-height: 150px;
@@ -181,7 +182,7 @@ $animationTime: 0.4s;
     position: absolute;
     width: 100%;
     top: 0;
-    left: -3%;
+    left: 0;
     transition: left $animationTime;
     &__animate{
       left: -125%;

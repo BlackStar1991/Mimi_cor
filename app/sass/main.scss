@@ -37,7 +37,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0 !important;
-  overflow: hidden;
+  //overflow: hidden;
 }
 
 .wrapperBlock {
@@ -129,16 +129,11 @@ body {
 
 
   box-sizing: border-box;
-  overflow: hidden;
+  //overflow: hidden;
 }
 
-.bl_main {
 
-}
 
-.bl_orange {
-  background-color: $color_orange;
-}
 
 .bl_video {
 
@@ -197,7 +192,7 @@ body {
     height: 100%;
     min-height: 608px !important;  ///465
 
-    overflow: hidden;  ///////////////
+    //overflow: hidden;  ///////////////
   }
 
   .sliderWrapper{
@@ -279,7 +274,7 @@ body {
       &:after{
         content: "";
         position: absolute;
-        width: 1500%;
+        width: 100vw;
         height: 23px;
         left: 134%;
         top: 25%;

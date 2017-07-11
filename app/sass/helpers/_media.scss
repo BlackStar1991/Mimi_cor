@@ -6,6 +6,21 @@
 /* Large Devices, Wide Screens 1280px */
 @media only screen and (max-width: $site) {
 
+  .bl_header{
+
+    &__logo_link{
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+  }
+
+  .bl_eye{
+    //margin: 4.1% auto 0;
+  }
+
+
 }
 
 /* Medium Devices, Desktops 992px */
