@@ -27,8 +27,8 @@
   }
 
   &__logo{
-
-    width: auto;
+    margin-left: 0;
+    width: 354px;
 
     &_link{
       margin-top: 3%;
@@ -170,7 +170,7 @@ $animationTime: 0.4s;
   padding-top: 4.7%;
   float: right;
   width: 382px;   /////////////////// 320
-  min-height: 150px;
+  min-height: 172px;
   display: inline-block;
   box-sizing: border-box;
  /// border: 1px solid green;
@@ -342,9 +342,12 @@ $animationTime: 0.4s;
       &:after{
         content: "";
         position: absolute;
+        width: 24px;
+        height: 24px;
         top: -4px;
         right: 0;
-        @include sprite($mi);
+        background: url("../img/mi.svg") 50% 50% no-repeat;
+        //@include sprite($mi);
       }
     }
 
