@@ -107,6 +107,15 @@ body {
   background-color: $color_orange;
 }
 
+.container {
+  width: 73%;
+}
+.row {
+  display: table;
+  width: 100%;
+}
+
+
 
 .fullPage{
   display: flex;
@@ -169,13 +178,15 @@ body {
 
 // SLIDERS
 
-.bl_fullBlock{
+.bl_fullBlock {
 
-  height: 100%;
-  min-height:$minHeghtMainPage;
   background-color: $color_orange;
-
+  display: table-cell;
+  float: none;
+  vertical-align: top;
 }
+
+
 
 .bl_fullSliders {
   position: relative;

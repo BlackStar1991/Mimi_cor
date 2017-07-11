@@ -1222,6 +1222,13 @@ body {
   height: 100%;
   background-color: #ed7d31; }
 
+.container {
+  width: 73%; }
+
+.row {
+  display: table;
+  width: 100%; }
+
 .fullPage {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1277,9 +1284,10 @@ body {
     height: 44px; }
 
 .bl_fullBlock {
-  height: 100%;
-  min-height: 610px;
-  background-color: #ed7d31; }
+  background-color: #ed7d31;
+  display: table-cell;
+  float: none;
+  vertical-align: top; }
 
 .bl_fullSliders {
   position: relative;
