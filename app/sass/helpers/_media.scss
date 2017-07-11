@@ -3,12 +3,15 @@
 /*Desktop First Method*/
 /*********************************************/
 
-/* Large Devices, Wide Screens 1280px */
-@media only screen and (max-width: $site) {
 
-  .bl_header{
 
-    &__logo_link{
+
+/* Large Devices, Wide Screens 1200px */
+@media only screen and (max-width: 1199px) {
+
+  .bl_header {
+
+    &__logo_link {
       width: 100%;
       margin: 0 auto;
       text-align: center;
@@ -16,16 +19,76 @@
 
   }
 
-  .bl_eye{
+  .bl_eye {
     //margin: 4.1% auto 0;
   }
 
+  //.bl_fullSliders .sliderWrapper .owl-carousel .owl-nav .owl-prev{
+  //  margin-left: 4px;
+  //}
+  //.bl_fullSliders .sliderWrapper .owl-carousel .owl-nav .owl-next{
+  //  margin-left: 124px;
+  //}
+
+
+  .slider_item__title{
+    width: 146px;
+    margin: 20px auto 0;
+  }
+
+  .bl_fullSliders__work, .bl_video{
+    min-height: 514px !important;
+  }
+
+  .bl_contacts {
+    &__adress {
+
+      &_newLine {
+        display: block;
+      }
+    }
+  }
 
 }
 
 /* Medium Devices, Desktops 992px */
 @media only screen and (max-width: $tablet-landscape) {
 
+  .bl_fullSliders .sliderWrapper .owl-carousel .owl-nav .owl-prev{
+    margin-left: 194px;
+  }
+  .bl_fullSliders .sliderWrapper .owl-carousel .owl-nav .owl-next{
+    margin-left: 176px;
+  }
+
+  .bl_fullSliders .sliderWrapper .owl-carousel .owl-item img{
+    margin: 5% auto;
+  }
+
+  .bl_fullSliders__work, .bl_video{
+    min-height: 536px !important;
+  }
+
+  .slider_item__title{
+    font-size: 18px;
+    width: 178px;
+    margin: 24px auto 0;
+  }
+
+  //.slider_item__hits,
+  //.slider_item__sale{
+  //  left: 10%;
+  //}
+
+  .bl_fullSliders_item__active:after{
+    left: 147%;
+  }
+
+
+
+  .bl_navigation{
+    padding-right: 0;
+  }
 }
 
 /* Small Devices, Tablets 768px */
@@ -33,35 +96,102 @@
 
 }
 
+
+@media only screen and (max-width: 730px) {
+
+   .bl_video{
+    min-height: 470px !important;
+  }
+  .bl_fullSliders__work{
+    min-height: 520px !important;
+  }
+
+  //.bl_fullSliders .sliderWrapper .owl-carousel .owl-nav .owl-prev{
+  //  margin-left: 3.5%;
+  //}
+  //.bl_fullSliders .sliderWrapper .owl-carousel .owl-nav .owl-next{
+  //  margin-left: 4%;
+  //}
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .bl_eye{
+    display: block;
+    margin: 1% auto;
+  }
+
+  .bl_menu__fullMenu{
+    padding-left: 0;
+  }
+
+.bl_nav{
+  width: auto;
+  float: none;
+  margin: 1% auto;
+  display: block;
+}
+  .bl_nav__tel{
+    text-align: center;
+
+    &_main{
+      font-size: 44px;
+    }
+  }
+  .bl_nav__street{
+    text-align: center;
+  }
+  .bl_nav__socButtons{
+    margin-right: 25%;
+  }
+
+   .bl_video{
+    min-height: 430px !important;
+  }
+  .bl_fullSliders__work{
+
+  }
+
+
+  //.bl_fullSliders .sliderWrapper .owl-carousel .owl-nav .owl-prev{
+  //  margin-left: 3.1%;
+  //}
+  //.bl_fullSliders .sliderWrapper .owl-carousel .owl-nav .owl-next{
+  //  margin-left: 4.2%;
+  //}
+}
+
+@media only screen and (max-width: 500px){
+
+  //.bl_fullSliders .sliderWrapper .owl-carousel .owl-nav .owl-prev{
+  //  margin-left: 2%;
+  //}
+  //.bl_fullSliders .sliderWrapper .owl-carousel .owl-nav .owl-next{
+  //  margin-left: 5.2%;
+  //}
+
+  .bl_video{
+    min-height: 375px !important;
+  }
+
+}
+
+
+
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: $phone-landscape) {
 
-  /*Disable Animation on Mobile Devices*/
-  .animated {
-    /*CSS transitions*/
-    -o-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -ms-transition-property: none !important;
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    /*CSS transforms*/
-    -o-transform: none !important;
-    -moz-transform: none !important;
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    /*CSS animations*/
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
-  }
+
+
+
 }
 
 /* Custom, iPhone Retina 320px */
 @media only screen and (max-width: $phone) {
-
+  .bl_nav__socButtons{
+    margin-right: 0%;
+  }
 }
 
 /*********************************************/

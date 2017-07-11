@@ -74,12 +74,13 @@ $(document).ready(function () {
 
     function owlSlider(slider){
         slider.owlCarousel({
-            items:1,
+            items: 1,
             loop:true, //Зацикливаем слайдер
             nav:true, //Отключение навигации
             dots:false,
             margin:20,
             autoplay:false, //Автозапуск слайдера
+            stopOnHover:true,
             smartSpeed:1000, //Время движения слайда
             autoplayTimeout:4000 //Время смены слайда
 
