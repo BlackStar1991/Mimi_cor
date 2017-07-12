@@ -21,7 +21,7 @@
 
 }
 .footerWrapper{
-  margin-top: 1.5%;
+  margin-top: 2.5%;
   width: 100%;
   display: block;
 }
@@ -131,7 +131,7 @@
 
 .bl_navigation{
   width: 100%;
-  margin-top: 7%;
+  margin-top: 6%;
   padding-right: 13%; ///////////////////////
   display: inline-block;
 
@@ -178,7 +178,7 @@
 
     &_black{
       color: #000;
-      padding:0 10%;
+      padding:0 6%;
     }
 
 
@@ -217,13 +217,12 @@
 
 .bl_copyrighted{
   clear: both;
-  padding-top: 13%;
+  padding-top: 19%;
 
   width: 100%;
   &__text{
     text-align: right;
     font-family: $Arciform;
-    //padding-right: 6%;
     font-size: 12px;         ////////////////////
     font-weight: 400;
   }
