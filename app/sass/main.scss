@@ -107,9 +107,9 @@ body {
   background-color: $color_orange;
 }
 
-.container {
-  width: 73%;
-}
+//.container {
+//  width: 73%;
+//}
 .row {
   display: table;
   width: 100%;
@@ -123,9 +123,9 @@ body {
   height: 100%;
 }
 .pageContant{
-  //flex: 1 0 auto;
-  display: flex;
-  flex-direction: column;
+
+  //display: flex;
+  //flex-direction: column;
 
 }
 
@@ -142,6 +142,7 @@ body {
   //padding-bottom: 50px;
   box-sizing: border-box;
   overflow: hidden;
+
 
 }
 

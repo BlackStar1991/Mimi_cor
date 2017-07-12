@@ -1219,9 +1219,6 @@ body {
   height: 100%;
   background-color: #ed7d31; }
 
-.container {
-  width: 73%; }
-
 .row {
   display: table;
   width: 100%; }
@@ -1234,14 +1231,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%; }
-
-.pageContant {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
 
 .main {
   -webkit-flex: 1 0 auto;
@@ -1429,10 +1418,12 @@ body {
 /*FOOTER*/
 /*********************************************/
 .footer {
-  margin-top: 3%;
-  width: 100%;
   position: relative;
-  padding-bottom: 20px; }
+  display: block;
+  width: 100%;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto; }
   .footer:before {
     margin-top: 20px;
     height: 50px;
@@ -1442,6 +1433,11 @@ body {
     top: -40px;
     left: 0;
     background: url("../img/threeLine.png") 50% 50% repeat-x; }
+
+.footerWrapper {
+  margin-top: 1.5%;
+  width: 100%;
+  display: block; }
 
 .bl_fullFooter {
   display: -webkit-flex;
@@ -1454,8 +1450,6 @@ body {
   margin-top: 43px; }
 
 .bl_contacts {
-  padding-top: 4%;
-  margin-top: 4%;
   max-width: 300px; }
   .bl_contacts__adress {
     margin-top: 4px;
