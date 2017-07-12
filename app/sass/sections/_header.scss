@@ -22,18 +22,19 @@
 
 
   &__full {
-    //margin-top: 2%;
-    //padding-bottom: 2%; //////40px
+
   }
 
   &__logo{
+
     margin-left: 0;
-    width: 354px;
+    width: 395px;
 
     &_link{
-      margin-top: 3%;
-      margin-bottom: 2%;
-      display: inline-block;
+
+      margin-top: 20px;
+      display: block;
+      width: 100%;
 
     }
   }
@@ -42,15 +43,16 @@
 
 .bl_eye {
   position: relative;
-  margin-top: 40%;
+  margin-top: 58px;
+  margin-left: 50px;
   display: inline-block;
   vertical-align: bottom;
+
   //margin-left: 11%; //// 138px
 
   width: 95px;
   height: 95px;
 
-  //border: 1px solid green;
   box-sizing: border-box;
   z-index:999;
 
@@ -168,13 +170,12 @@ $animationTime: 0.4s;
 
 .bl_nav{
   position: relative;
-  padding-top: 15%;
+  padding-top: 40px;
   float: right;
-  width: 382px;   /////////////////// 320
+  width: 320px;
   min-height: 172px;
   display: inline-block;
   box-sizing: border-box;
- /// border: 1px solid green;
   overflow: hidden;
 
 
@@ -195,7 +196,7 @@ $animationTime: 0.4s;
   &__tel{
     text-align: right;
     font-family: $ArialRoundedBold;
-    line-height: 25px;
+    line-height: 48px;
     &_code{
       font-size: 36px;
       font-weight: 700;
@@ -209,7 +210,7 @@ $animationTime: 0.4s;
   }
 
   &__street{
-    margin-top: 10px;
+    //margin-top: 10px;
     text-align: right;
     font-family: $CenturyGothic;
     font-size: 25px;
@@ -219,7 +220,7 @@ $animationTime: 0.4s;
   // SOCBUTTONS
 
   &__socButtons{
-    margin-top: 2%;
+    margin-top: 1%;
     clear: both;
     float: right;
 
@@ -227,6 +228,7 @@ $animationTime: 0.4s;
   &__email{
     float: right;
     vertical-align: top;
+
     margin-left: 10px;
     //@include sprite($email);
     width: 32px;
@@ -302,7 +304,7 @@ $animationTime: 0.4s;
 
     width: 100%;
     padding-left: 6%;
-    margin-top: 36px;
+    margin-top: 44px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -315,7 +317,7 @@ $animationTime: 0.4s;
   }
 
   &__item{
-
+    float: right;
 
     &:hover .bl_menu__word{
       opacity:1;
@@ -329,12 +331,12 @@ $animationTime: 0.4s;
     position: relative;
     color: $color_lightWhite;
     font-family: $Arciform;
-    font-size: 20px;
-    line-height: 9px;
+    font-size: 15px;
+    //line-height: 9px;
   }
   &__word{
     display: inline-block;
-    opacity:0;              //////////////
+    opacity:1;              //////////////
 
     &_decor{
       position: relative;
