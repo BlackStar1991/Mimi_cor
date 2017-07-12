@@ -123,11 +123,15 @@ body {
   height: 100%;
 }
 .pageContant{
-  flex: 1 0 auto;
+  //flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+
 }
 
 
 .main{
+  flex: 1 0 auto;
   width: 100%;
   height: 100%;
   position: relative;
@@ -135,9 +139,10 @@ body {
   clear: both;
   background: $color_orange url("../img/setkaMin2.png") 50% 100% repeat;
 
-
+  //padding-bottom: 50px;
   box-sizing: border-box;
   overflow: hidden;
+
 }
 
 
@@ -150,11 +155,12 @@ body {
   height: 100%;
   box-sizing: border-box;
   min-height: $minHeghtMainPage;
-  //background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.25);
 
   &__background{
     margin-top: 4px;
     width:100%;
+    min-width: 300px;
   }
 
 
@@ -229,7 +235,9 @@ body {
 
     .owl-carousel .owl-item img{
       width:auto;
-      padding: 0;
+      display: block;
+      margin: 0 auto;
+      //padding: 0;
     }
 
 
@@ -278,6 +286,8 @@ body {
   }
   &_item{
     display: block;
+    width: 100%;
+    height: 100%;
     margin-top: 4px;
     text-align: right;
     font-family: $Arciform;
@@ -298,7 +308,7 @@ body {
         position: absolute;
         width: 100vw;
         height: 23px;
-        left: 134%;
+        left: 130%;  ////// 134%
         top: 25%;
         background: url("../img/activeItemGrid.png") 50% 50% repeat-x;
         z-index:3;

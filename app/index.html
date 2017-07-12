@@ -20,7 +20,7 @@
 
     <!-- build:css css/libs.min.css -->
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
-    <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.css">
+    <!--<link rel="stylesheet" href="bower/font-awesome/css/font-awesome.css">-->
     <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.min.css">
@@ -50,13 +50,16 @@
                 <div class="bl_header">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-12">
-                                <div class="bl_header__full">
+                            <div class="bl_header__full">
+
+                                <div class="col-xs-12 col-md-5">
                                     <a class="bl_header__logo_link" href="#">
                                         <img class="bl_header__logo" src="img/logo.svg" alt="">
                                     </a>
+                                </div>
 
 
+                                <div class="col-xs-6 col-md-2">
                                     <div class="bl_eye">
                                         <input class="bl_eye-checkbox" type="checkbox" name="onoffswitch"
                                                id="bl_eye-checkbox">
@@ -74,10 +77,13 @@
 <path  class="eyeborowRight" d="m 66.80813,7.0981188 c 11.82374,0 21.40188,9.5781442 21.40188,21.4018812"/>
 </g>
 </svg>
-
                                         </label>
-
                                     </div>
+                                </div>
+
+                                <div class="col-xs-6 col-md-4 col-md-offset-1">
+
+
                                     <div class="bl_nav">
                                         <div class="wrapperBlock">
                                             <div class="bl_nav__adress">
@@ -141,6 +147,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -154,111 +161,122 @@
         <main class="main">
             <!-- Code -->
             <div class="mainWrapper">
-                
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-8 bl_fullBlock">
-                                <div class="wrapperBlock">
-                                    <div class="bl_video hidden-xs">
-                                        <video class="bl_video__background"  loop src="video/videoTest.mp4"></video>
-                                        <!--<div class="bl_video__play-triangle"></div>-->
-                                        <a class="bl_video__link" href="#"></a>
-                                    </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 hidden-xs bl_fullBlock">
+                            <div class="wrapperBlock">
+                                <div class="bl_video ">
+                                    <!--<video class="bl_video__background" autoplay loop src="video/videoTest.mp4"></video>-->
+                                    <div class="bl_video__play-triangle"></div>
+                                    <a class="bl_video__link" href="#"></a>
                                 </div>
-                            </div>
-                            <div class="col-md-4 bl_fullBlock">
-
-
-                                <div class="bl_fullSliders">
-                                    <ul class="bl_fullSliders__work">
-                                        <li class="sliderWrapper sliderWrapper_animation__position">
-                                            <div class="wrapperBlock">
-                                                <ul class="slider_hits owl-carousel owl-theme">
-                                                    <li class="slider_hits__item">
-                                                        <h2 class="slider_item__title">«<span class="slider_item__name">Саламандра</span>»</h2>
-                                                        <div class="slider_item__hits"></div>
-                                                        <img class="slider_item__img" src="img/goods/item1.png"
-                                                             alt="item2">
-                                                        <a class="slider_item__details" href="#">дізнатись більше...</a>
-                                                    </li>
-                                                    <li class="slider_hits__item">
-                                                        <h2 class="slider_item__title">«<span class="slider_item__name">Токай</span>»</h2>
-                                                        <div class="slider_item__hits"></div>
-                                                        <img class="slider_item__img" src="img/goods/item2.png"
-                                                             alt="item2">
-                                                        <a class="slider_item__details" href="#">дізнатись більше...</a>
-                                                    </li>
-                                                    <li class="slider_hits__item">
-                                                        <h2 class="slider_item__title">«<span class="slider_item__name">Пиксар</span>»</h2>
-                                                        <div class="slider_item__hits"></div>
-                                                        <img class="slider_item__img" src="img/goods/item3.png"
-                                                             alt="item2">
-                                                        <a class="slider_item__details" href="#">дізнатись більше...</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="sliderWrapper sliderWrapper_animation__position">
-                                            <div class="wrapperBlock">
-                                                <ul class="slider_shares owl-carousel owl-theme">
-                                                    <li class="slider_shares__item">
-                                                        <h2 class="slider_item__title">«<span class="slider_item__name">Парта трансформер «Mimi»</span>»</h2>
-                                                        <p class="slider_item__sale">- <span
-                                                                class="slider_item__sale_number">30</span> %
-                                                        </p>
-                                                        <img class="slider_item__img" src="img/goods/item4.png"
-                                                             alt="item1">
-                                                        <a class="slider_item__details" href="#">дізнатись більше...</a>
-                                                    </li>
-                                                    <li class="slider_hits__item">
-                                                        <h2 class="slider_item__title">«<span class="slider_item__name">Ля Бразил</span>»</h2>
-                                                        <p class="slider_item__sale">- <span
-                                                                class="slider_item__sale_number">30</span> %</p>
-                                                        <img class="slider_item__img" src="img/goods/item5.png" alt="">
-                                                        <a class="slider_item__details" href="#">дізнатись більше...</a>
-                                                    </li>
-                                                    <li class="slider_hits__item">
-                                                        <h2 class="slider_item__title">«<span class="slider_item__name">Стільчик ігровий <br> «Будинок Київський»</span>»</h2>
-                                                        <p class="slider_item__sale">- <span class="slider_item__sale_number">30</span> %
-                                                        </p>
-                                                        <img class="slider_item__img" src="img/goods/item6.png" alt="">
-                                                        <a class="slider_item__details" href="#">дізнатись більше...</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="sliderWrapper sliderWrapper_animation__position">
-                                            <div class="wrapperBlock">
-                                                <ul class="slider_news owl-carousel owl-theme">
-                                                    <li class="slider_news__item">
-                                                        <h2 class="slider_item__title">«<span class="slider_item__name">Новости 1</span>»</h2>
-                                                        <img class="slider_item__img" src="http://dummyimage.com/360x363/0f0" alt="">
-                                                        <a class="slider_item__details" href="#">дізнатись більше...</a>
-                                                    </li>
-                                                    <li class="slider_news__item">
-                                                        <h2 class="slider_item__title">«<span class="slider_item__name">Новости 2</span>»</h2>
-                                                        <img class="slider_item__img" src="http://dummyimage.com/360x363/0f0" alt="">
-                                                        <a class="slider_item__details" href="#">дізнатись більше...</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-
-                                    <!--CHOOSE SLIDER -->
-                                    <ul class="bl_fullSliders__block">
-                                        <li class="bl_fullSliders_item bl_fullSliders_item__active">хіти</li>
-                                        <li class="bl_fullSliders_item">акції</li>
-                                        <li class="bl_fullSliders_item">новини</li>
-                                    </ul>
-
-
-                                </div>
-
-
                             </div>
                         </div>
+                        <div class="col-md-4 bl_fullBlock">
+
+
+                            <div class="bl_fullSliders">
+                                <ul class="bl_fullSliders__work">
+                                    <li class="sliderWrapper sliderWrapper_animation__position">
+                                        <div class="wrapperBlock">
+                                            <ul class="slider_hits owl-carousel owl-theme">
+                                                <li class="slider_hits__item">
+                                                    <h2 class="slider_item__title">«<span class="slider_item__name">Саламандра</span>»
+                                                    </h2>
+                                                    <div class="slider_item__hits"></div>
+                                                    <img class="slider_item__img" src="img/goods/item1.png"
+                                                         alt="item2">
+                                                    <a class="slider_item__details" href="#">дізнатись більше...</a>
+                                                </li>
+                                                <li class="slider_hits__item">
+                                                    <h2 class="slider_item__title">«<span class="slider_item__name">Токай</span>»
+                                                    </h2>
+                                                    <div class="slider_item__hits"></div>
+                                                    <img class="slider_item__img" src="img/goods/item2.png"
+                                                         alt="item2">
+                                                    <a class="slider_item__details" href="#">дізнатись більше...</a>
+                                                </li>
+                                                <li class="slider_hits__item">
+                                                    <h2 class="slider_item__title">«<span class="slider_item__name">Пиксар</span>»
+                                                    </h2>
+                                                    <div class="slider_item__hits"></div>
+                                                    <img class="slider_item__img" src="img/goods/item3.png"
+                                                         alt="item2">
+                                                    <a class="slider_item__details" href="#">дізнатись більше...</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="sliderWrapper sliderWrapper_animation__position">
+                                        <div class="wrapperBlock">
+                                            <ul class="slider_shares owl-carousel owl-theme">
+                                                <li class="slider_shares__item">
+                                                    <h2 class="slider_item__title">«<span class="slider_item__name">Парта трансформер «Mimi»</span>»
+                                                    </h2>
+                                                    <p class="slider_item__sale">- <span
+                                                            class="slider_item__sale_number">30</span> %
+                                                    </p>
+                                                    <img class="slider_item__img" src="img/goods/item4.png"
+                                                         alt="item1">
+                                                    <a class="slider_item__details" href="#">дізнатись більше...</a>
+                                                </li>
+                                                <li class="slider_hits__item">
+                                                    <h2 class="slider_item__title">«<span class="slider_item__name">Ля Бразил</span>»
+                                                    </h2>
+                                                    <p class="slider_item__sale">- <span
+                                                            class="slider_item__sale_number">30</span> %</p>
+                                                    <img class="slider_item__img" src="img/goods/item5.png" alt="">
+                                                    <a class="slider_item__details" href="#">дізнатись більше...</a>
+                                                </li>
+                                                <li class="slider_hits__item">
+                                                    <h2 class="slider_item__title">«<span class="slider_item__name">Стільчик ігровий <br> «Будинок Київський»</span>»
+                                                    </h2>
+                                                    <p class="slider_item__sale">- <span
+                                                            class="slider_item__sale_number">30</span> %
+                                                    </p>
+                                                    <img class="slider_item__img" src="img/goods/item6.png" alt="">
+                                                    <a class="slider_item__details" href="#">дізнатись більше...</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="sliderWrapper sliderWrapper_animation__position">
+                                        <div class="wrapperBlock">
+                                            <ul class="slider_news owl-carousel owl-theme">
+                                                <li class="slider_news__item">
+                                                    <h2 class="slider_item__title">«<span class="slider_item__name">Новости 1</span>»
+                                                    </h2>
+                                                    <img class="slider_item__img"
+                                                         src="http://dummyimage.com/360x363/0f0" alt="">
+                                                    <a class="slider_item__details" href="#">дізнатись більше...</a>
+                                                </li>
+                                                <li class="slider_news__item">
+                                                    <h2 class="slider_item__title">«<span class="slider_item__name">Новости 2</span>»
+                                                    </h2>
+                                                    <img class="slider_item__img"
+                                                         src="http://dummyimage.com/360x363/0f0" alt="">
+                                                    <a class="slider_item__details" href="#">дізнатись більше...</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <!--CHOOSE SLIDER -->
+                                <ul class="bl_fullSliders__block">
+                                    <li class="bl_fullSliders_item bl_fullSliders_item__active">хіти</li>
+                                    <li class="bl_fullSliders_item">акції</li>
+                                    <li class="bl_fullSliders_item">новини</li>
+                                </ul>
+
+
+                            </div>
+
+
+                        </div>
                     </div>
+                </div>
 
             </div>
         </main>
@@ -275,7 +293,8 @@
 
                     <div class="col-md-3">
                         <div class="bl_contacts">
-                            <p class="bl_contacts__adress">04074, м. Київ, <span class="bl_contacts__adress_newLine">вул. Новозабарська, 2/6 </span></p>
+                            <p class="bl_contacts__adress">04074, м. Київ, <span class="bl_contacts__adress_newLine">вул. Новозабарська, 2/6 </span>
+                            </p>
                             <p class="bl_contacts__adress">
                                 <span class="bl_contacts__adress_tel">044 222 51 21</span>
                                 <span class="bl_contacts__adress_email">info@mimi.ua</span>
@@ -325,21 +344,27 @@
 
                             <div class="bl_loadingCatalogs__col">
                                 <p class="bl_loadingCatalogs__item bl_loadingCatalogs__item_black">kids</p>
-                                <a href="files/test.txt" download class="bl_loadingCatalogs__item bl_loadingCatalogs__button_max"></a>
-                                <a href="files/test.txt" download class="bl_loadingCatalogs__item bl_loadingCatalogs__button_pdf"></a>
+                                <a href="files/test.txt" download
+                                   class="bl_loadingCatalogs__item bl_loadingCatalogs__button_max"></a>
+                                <a href="files/test.txt" download
+                                   class="bl_loadingCatalogs__item bl_loadingCatalogs__button_pdf"></a>
 
                             </div>
 
                             <div class="bl_loadingCatalogs__col">
                                 <p class="bl_loadingCatalogs__item bl_loadingCatalogs__item_black">parents</p>
-                                <a href="files/test.txt" download class="bl_loadingCatalogs__item bl_loadingCatalogs__button_max"></a>
-                                <a href="files/test.txt" download class="bl_loadingCatalogs__item bl_loadingCatalogs__button_pdf"></a>
+                                <a href="files/test.txt" download
+                                   class="bl_loadingCatalogs__item bl_loadingCatalogs__button_max"></a>
+                                <a href="files/test.txt" download
+                                   class="bl_loadingCatalogs__item bl_loadingCatalogs__button_pdf"></a>
                             </div>
 
                             <div class="bl_loadingCatalogs__col">
                                 <p class="bl_loadingCatalogs__item bl_loadingCatalogs__item_black">office</p>
-                                <a href="files/test.txt" download class="bl_loadingCatalogs__iytem bl_loadingCatalogs__button_max"></a>
-                                <a href="files/test.txt" download class="bl_loadingCatalogs__item bl_loadingCatalogs__button_pdf"></a>
+                                <a href="files/test.txt" download
+                                   class="bl_loadingCatalogs__iytem bl_loadingCatalogs__button_max"></a>
+                                <a href="files/test.txt" download
+                                   class="bl_loadingCatalogs__item bl_loadingCatalogs__button_pdf"></a>
                             </div>
 
 
@@ -350,7 +375,7 @@
                         </div>
 
                     </div>
-
+                </div>
 
                 </div>
             </div>

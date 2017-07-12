@@ -42,9 +42,10 @@
 
 .bl_eye {
   position: relative;
+  margin-top: 40%;
   display: inline-block;
   vertical-align: bottom;
-  margin-left: 11%; //// 138px
+  //margin-left: 11%; //// 138px
 
   width: 95px;
   height: 95px;
@@ -167,7 +168,7 @@ $animationTime: 0.4s;
 
 .bl_nav{
   position: relative;
-  padding-top: 4.7%;
+  padding-top: 15%;
   float: right;
   width: 382px;   /////////////////// 320
   min-height: 172px;
