@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    console.log($(".header").outerHeight()  + " height");
 
 
 
@@ -29,9 +30,7 @@ $(document).ready(function () {
     var positionOfSlider = $(".sliderWrapper_animation__position");
     var allSliders = $(".sliderWrapper");
 
-    console.log(positionOfSlider.eq(0).css("top") + " = top 1");
-    console.log(positionOfSlider.eq(1).css("top") + " = top 2");
-    console.log(positionOfSlider.eq(2).css("top") + " = top 3");
+
 
 
 

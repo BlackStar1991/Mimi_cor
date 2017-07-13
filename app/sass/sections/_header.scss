@@ -131,7 +131,7 @@
 
 
   .bl_eye-checkbox:checked + .bl_eye-label .bl_eye_circle{
-    transform: translateX(120%);
+    transform: translateX(80px);
     transition: all ease .3s;
   }
   .bl_eye-checkbox:checked + .bl_eye-label .eyeborowRight{
@@ -170,7 +170,7 @@ $animationTime: 0.4s;
 
 .bl_nav{
   position: relative;
-  padding-top: 40px;
+  padding-top: 46px;
   float: right;
   width: 368px;       /////////
   min-height: 172px;
@@ -196,7 +196,7 @@ $animationTime: 0.4s;
   &__tel{
     text-align: right;
     font-family: $ArialRoundedBold;
-    line-height: 48px;
+    line-height: 34px;
     &_code{
       font-size: 36px;
       font-weight: 700;
@@ -205,6 +205,7 @@ $animationTime: 0.4s;
     &_main{
       font-size: 51px;
       font-weight: 700;
+      margin-right: -8px;
     }
 
   }
@@ -220,7 +221,7 @@ $animationTime: 0.4s;
   // SOCBUTTONS
 
   &__socButtons{
-    margin-top: 1%;
+    margin-top: 10px;
     clear: both;
     float: right;
 
@@ -238,7 +239,7 @@ $animationTime: 0.4s;
   &__facebook{
     float: right;
     vertical-align: top;
-    margin-left: 10px;
+    margin-left: 15px;
     //@include sprite($facebook);
     width: 32px;
     height: 35px;
@@ -257,11 +258,16 @@ $animationTime: 0.4s;
 
 .bl_language{
   float: right;
-  margin-right: 5%;
+  margin-top: 6px;
+  margin-right: 10px;
 
   &__label{
     position: relative;
+    width: 28px;
+    text-align: center;
     cursor: pointer;
+    display: inline-block;
+    padding: 0 5px;
   }
 
   &__ratio{
@@ -272,15 +278,17 @@ $animationTime: 0.4s;
 
     &:checked + .bl_language__text{
       color: $color_orange;
-      background-color: #000;
-      border-radius: 14px;
-      padding: 0 4px;
+      width: 28px;
+      background: url("../img/podlogka2.svg")  no-repeat;
+      border-top-left-radius: 2px;
+      display: block;
+      padding: 0 2px;
     }
   }
 
   &__text{
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 12px;
 
   }
 }
@@ -336,18 +344,20 @@ $animationTime: 0.4s;
   }
   &__word{
     display: inline-block;
+    color: $color_lightWhite;
     opacity:0;              //////////////
 
     &_decor{
       position: relative;
       padding-right: 30px;
+
       &:before{
         content: "";
         position: absolute;
         left: 82%;
         top: -1000%;
         width: 1px;
-        height:100px;
+        height:110px;
         background-color: $color_lightWhite;
       }
 
@@ -367,6 +377,7 @@ $animationTime: 0.4s;
   //letter decor
   .letter_decor{
     position: relative;
+    color: $color_lightWhite;
     width:auto;
     &:after{
       content: "";
@@ -374,7 +385,7 @@ $animationTime: 0.4s;
       left: 50%;
       bottom: 50%;
       width: 1px;
-      height: 300px;
+      height: 305px;
       background-color: $color_lightWhite;
     }
   }
