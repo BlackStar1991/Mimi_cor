@@ -1524,22 +1524,22 @@ body {
   background-color: transparent; }
   .bl_subscribeForDiscounts__email::-webkit-input-placeholder {
     text-indent: 10px;
-    font-size: 0.7em;
+    font-size: 14px;
     padding-left: 2%;
     color: #ed7d31; }
   .bl_subscribeForDiscounts__email::-moz-placeholder {
     text-indent: 10px;
-    font-size: 0.7em;
+    font-size: 14px;
     padding-left: 2%;
     color: #ed7d31; }
   .bl_subscribeForDiscounts__email:-ms-input-placeholder {
     text-indent: 10px;
-    font-size: 0.7em;
+    font-size: 14px;
     padding-left: 2%;
     color: #ed7d31; }
   .bl_subscribeForDiscounts__email::placeholder {
     text-indent: 10px;
-    font-size: 0.7em;
+    font-size: 14px;
     padding-left: 2%;
     color: #ed7d31; }
 
@@ -1577,6 +1577,7 @@ body {
   width: 20px;
   height: 20px;
   background-color: transparent;
+  vertical-align: middle;
   outline: none;
   border: none; }
 

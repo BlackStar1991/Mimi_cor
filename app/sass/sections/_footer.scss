@@ -85,7 +85,7 @@
     background-color: transparent;
     &::placeholder{
       text-indent: 10px;
-      font-size: 0.7em;
+      font-size: 14px;
       padding-left: 2%;
       color: $color_orange;
     }
@@ -112,7 +112,7 @@
 .search{
 
   &_field{
-    //margin-top: 1%;
+
     width: 51%;
     font-size: 14px;
     font-weight: 600;
@@ -127,6 +127,7 @@
     display: inline-block;
     @include sprite($loupe);
     background-color: transparent;
+    vertical-align: middle;
     outline: none;
     border: none;
   }
