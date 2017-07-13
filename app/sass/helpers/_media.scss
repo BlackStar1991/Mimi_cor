@@ -50,6 +50,33 @@
     text-align: center;
   }
 
+  .bl_contacts{
+    margin: 0 auto;
+  }
+
+  .bl_navigation{
+    margin-top: 0;
+    padding-right: 0;
+  }
+
+  .bl_loadingCatalogs{
+    width: 100%;
+    float: none;
+
+    &__wrapper{
+      float: none;
+      margin: 0 auto;
+    }
+  }
+
+
+  .bl_copyrighted{
+    padding-top: 10px;
+
+    &__text{
+      text-align: center;
+    }
+  }
 }
 
 /* Small Devices, Tablets 768px */

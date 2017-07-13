@@ -1,12 +1,10 @@
 .footer{
   position: relative;
   display: block;
-  //padding-top: 3%;
-  //margin-top: 3%;
   width: 100%;
 
   flex: 0 1 auto;
-  //padding-bottom: 20px;
+
 
   &:before{
     margin-top: 20px;
@@ -21,7 +19,7 @@
 
 }
 .footerWrapper{
-  margin-top: 2.5%;
+  margin-top: 40px;
   width: 100%;
   display: block;
 }
@@ -36,7 +34,6 @@
 
 .bl_contacts{
 
-  //margin-top: 4%;
   max-width: 300px;
 
   &__adress{
@@ -109,10 +106,10 @@
 .search{
 
   &_field{
-    margin-top: 4%;
-    width: 50%;
+    //margin-top: 1%;
+    width: 51%;
     font-size: 14px;
-    transform: translateY(-50%);
+    transform: translateY(-75%);
     display: inline-block;
     border: none;
     border-bottom: 1px solid #000;
@@ -131,7 +128,7 @@
 
 .bl_navigation{
   width: 100%;
-  margin-top: 6%;
+  margin-top: 8%;
   padding-right: 13%; ///////////////////////
   display: inline-block;
 
@@ -154,8 +151,12 @@
 
 
 .bl_loadingCatalogs{
-  max-width: 420px;
+  width: 420px;
   float: right;
+
+  &__wrapper{
+    float: right;
+  }
 
   &__col{
     float: left;
@@ -217,7 +218,7 @@
 
 .bl_copyrighted{
   clear: both;
-  padding-top: 19%;
+  padding-top: 16%;
 
   width: 100%;
   &__text{

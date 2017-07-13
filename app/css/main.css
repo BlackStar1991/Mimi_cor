@@ -957,7 +957,7 @@ button {
     transition: all ease .3s; }
   .bl_eye .eyeborowRight {
     fill: none;
-    stroke-width: 1.6067;
+    stroke-width: 1.6;
     stroke-miterlimit: 10;
     stroke: #fad9c2;
     transition: all ease .3s;
@@ -1451,7 +1451,7 @@ body {
     background: url("../img/threeLine.png") 50% 50% repeat-x; }
 
 .footerWrapper {
-  margin-top: 2.5%;
+  margin-top: 40px;
   width: 100%;
   display: block; }
 
@@ -1533,12 +1533,11 @@ body {
   color: #fad9c2; }
 
 .search_field {
-  margin-top: 4%;
-  width: 50%;
+  width: 51%;
   font-size: 14px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-75%);
+      -ms-transform: translateY(-75%);
+          transform: translateY(-75%);
   display: inline-block;
   border: none;
   border-bottom: 1px solid #000;
@@ -1557,7 +1556,7 @@ body {
 
 .bl_navigation {
   width: 100%;
-  margin-top: 6%;
+  margin-top: 8%;
   padding-right: 13%;
   display: inline-block; }
   .bl_navigation__fullNavigation {
@@ -1575,8 +1574,10 @@ body {
     line-height: 12px; }
 
 .bl_loadingCatalogs {
-  max-width: 420px;
+  width: 420px;
   float: right; }
+  .bl_loadingCatalogs__wrapper {
+    float: right; }
   .bl_loadingCatalogs__col {
     float: left; }
   .bl_loadingCatalogs__item {
@@ -1627,7 +1628,7 @@ body {
 
 .bl_copyrighted {
   clear: both;
-  padding-top: 19%;
+  padding-top: 16%;
   width: 100%; }
   .bl_copyrighted__text {
     text-align: right;
@@ -1670,7 +1671,22 @@ body {
       text-align: center; }
   .bl_language {
     float: none;
-    text-align: center; } }
+    text-align: center; }
+  .bl_contacts {
+    margin: 0 auto; }
+  .bl_navigation {
+    margin-top: 0;
+    padding-right: 0; }
+  .bl_loadingCatalogs {
+    width: 100%;
+    float: none; }
+    .bl_loadingCatalogs__wrapper {
+      float: none;
+      margin: 0 auto; }
+  .bl_copyrighted {
+    padding-top: 10px; }
+    .bl_copyrighted__text {
+      text-align: center; } }
 
 /* Small Devices, Tablets 768px */
 /* Extra Small Devices, Phones 480px */
