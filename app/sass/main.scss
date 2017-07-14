@@ -256,18 +256,19 @@ body {
       float: left;
       font-size: 0;
       width: 75px;
-      margin-top: 20px;
+      margin-top: 15px;  ///// 20зч
+
       margin-left: 0;
-      //margin-left: 26px;
+
       background: transparent url("../img/arrow_left.svg") 50% 50% no-repeat;
     }
     .owl-carousel .owl-nav .owl-next{
       float: right;
       font-size: 0;
       width: 75px;
-      margin-top: 20px;
+      margin-top: 15px;  ////// было 20
       margin-right: 0;
-      //margin-left: 154px;    ///////////////////
+
       background: transparent url("../img/arrow_right.svg")50% 50% no-repeat;
     }
 
@@ -319,7 +320,7 @@ body {
         position: absolute;
         width: 100vw;
         height: 24px;
-        left: 130%;  ////// 134%
+        left: 102px;  ////// 130%
         top: 23%;
         background: url("../img/activeItemGrid3.png") 50% 50% repeat-x;
         z-index:4;
@@ -380,7 +381,7 @@ body {
     position: absolute;
 
     top: -17%;
-    left: 2%;
+    left: 0;  /////2%
     width: 134px;
     height: 134px;
     background: url("../img/bestseller.png") 50% 50% no-repeat;

@@ -230,7 +230,7 @@ $animationTime: 0.4s;
     float: right;
     vertical-align: top;
 
-    margin-left: 10px;
+    margin-left: 15px;
     //@include sprite($email);
     width: 32px;
     height: 35px;
@@ -267,7 +267,6 @@ $animationTime: 0.4s;
     text-align: center;
     cursor: pointer;
     display: inline-block;
-    padding: 0 5px;
   }
 
   &__ratio{
@@ -339,8 +338,8 @@ $animationTime: 0.4s;
     position: relative;
     color: $color_lightWhite;
     font-family: $Arciform;
-    font-size: 15px;
-    //line-height: 9px;
+    font-size: 17px;   //////////// 15px
+
   }
   &__word{
     display: inline-block;

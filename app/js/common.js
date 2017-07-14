@@ -14,6 +14,25 @@ $(document).ready(function () {
     });
 
 
+    /// Moving eye for IE
+
+    var buttonEye = $(".bl_eye"),
+        eyeCircle = $(".bl_eye_circle");
+
+    buttonEye.on("click", function(){
+       var counter = 0;
+
+       console.log("ok");
+
+        eyeCircle.animate({
+            transform: 'translateX(80px)'
+        }, 300);
+
+
+
+    });
+
+
 
     //SLIDERS
 

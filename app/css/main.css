@@ -1045,7 +1045,7 @@ button {
   .bl_nav__email {
     float: right;
     vertical-align: top;
-    margin-left: 10px;
+    margin-left: 15px;
     width: 32px;
     height: 35px;
     background: url("../img/email.svg") 50% 50% no-repeat; }
@@ -1072,8 +1072,7 @@ button {
     width: 28px;
     text-align: center;
     cursor: pointer;
-    display: inline-block;
-    padding: 0 5px; }
+    display: inline-block; }
   .bl_language__ratio {
     position: absolute;
     top: 40%;
@@ -1127,7 +1126,7 @@ button {
     position: relative;
     color: #fad9c2;
     font-family: "ArciformSanscyr", sans-serif;
-    font-size: 15px; }
+    font-size: 17px; }
   .bl_menu__word {
     display: inline-block;
     color: #fad9c2;
@@ -1333,14 +1332,14 @@ body {
       float: left;
       font-size: 0;
       width: 75px;
-      margin-top: 20px;
+      margin-top: 15px;
       margin-left: 0;
       background: transparent url("../img/arrow_left.svg") 50% 50% no-repeat; }
     .bl_fullSliders .sliderWrapper .owl-carousel .owl-nav .owl-next {
       float: right;
       font-size: 0;
       width: 75px;
-      margin-top: 20px;
+      margin-top: 15px;
       margin-right: 0;
       background: transparent url("../img/arrow_right.svg") 50% 50% no-repeat; }
   .bl_fullSliders__block {
@@ -1378,7 +1377,7 @@ body {
         position: absolute;
         width: 100vw;
         height: 24px;
-        left: 130%;
+        left: 102px;
         top: 23%;
         background: url("../img/activeItemGrid3.png") 50% 50% repeat-x;
         z-index: 4; }
@@ -1420,7 +1419,7 @@ body {
 .slider_item__hits {
   position: absolute;
   top: -17%;
-  left: 2%;
+  left: 0;
   width: 134px;
   height: 134px;
   background: url("../img/bestseller.png") 50% 50% no-repeat; }
