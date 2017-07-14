@@ -256,7 +256,7 @@ body {
       float: left;
       font-size: 0;
       width: 75px;
-      margin-top: 15px;  ///// 20зч
+      margin-top: 15px;  ///// 20px
 
       margin-left: 0;
 
@@ -266,7 +266,7 @@ body {
       float: right;
       font-size: 0;
       width: 75px;
-      margin-top: 15px;  ////// было 20
+      margin-top: 15px;  ////// было 20px
       margin-right: 0;
 
       background: transparent url("../img/arrow_right.svg")50% 50% no-repeat;
@@ -279,16 +279,16 @@ body {
 
   &__block{
     position: absolute;
-    bottom: 3%;
+    bottom: 1%;
     right: 3%;
     display: block;
-    z-index:999;
+    z-index:998;
   }
   &_item{
     display: block;
     width: 100%;
     height: 100%;
-    margin-top: 4px;
+    //margin-top: 4px;
     text-align: right;
     font-family: $Arciform;
     font-size: 27px;
@@ -301,7 +301,7 @@ body {
       position: relative;
       transition: all 0.3s;
       color: $color_lightWhite;
-
+      //text-decoration: underline;  // Эта штука не 1px
 
       &:before{
         content: "";
@@ -313,16 +313,21 @@ body {
 
         height: 23px;
         z-index:3;
+
       }
+      &:last-child:before{
+        width: 133%;
+      }
+
 
       &:after{
         content: "";
         position: absolute;
         width: 100vw;
-        height: 24px;
+        height: 23px;
         left: 102px;  ////// 130%
         top: 23%;
-        background: url("../img/activeItemGrid3.png") 50% 50% repeat-x;
+        background: url("../img/activeItemGrid4.png") 50% 50% repeat-x;
         z-index:4;
       }
     }
@@ -360,7 +365,7 @@ body {
   &__title {
     position: absolute;
     left: 25%;
-    top: -30%;
+    top: -32%;  ///////// -30%
     width: 172px;
     display: block;
     text-align: center;
@@ -403,6 +408,7 @@ body {
   &__sale{
     position: absolute;
     top: -7%;
+    left: -24px;
     display: block;
     transform: rotate(-45deg);
     font-family: $LCChalk;
